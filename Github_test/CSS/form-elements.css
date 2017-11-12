@@ -125,8 +125,33 @@ textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder { co
 select,
 input[type="text"]::-webkit-input-placeholder, input[type="tel"]:-moz-placeholder,input[type="password"]::-webkit-input-placeholder, 
 textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #888; }
+.btn-paginas-cerrar{
+    float: right;
+        margin-right: 5px;
+    margin-bottom: 10px;
+}
+.btn-paginas-solicitud{
+    margin: 0 auto;
+    width: 300px;
+}
+#btn-close:hover,#btn-close:active,#btn-close:focus{
+    background: transparent !important;
+    border: none !important;
+    color: #810609 !important;
+}
 
-
+#btn-close{
+    background: transparent;
+    color: red;
+    width: 50px;
+    height: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 8px;
+}
+#btn-atender{
+    background: #812534;
+}
 
 button.btn {
 	height: 50px;

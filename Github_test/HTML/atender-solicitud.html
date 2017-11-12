@@ -13,24 +13,43 @@
 	<script src="../JS/jquery-3.1.1.min.js" type="text/javascript"></script>
     </head>
     <body>
-       <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="../index.php"><img  class="logo" src="../Images/Logo.png" /></a>
-                    </div>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="../index.php"><img  class="logo" src="../Images/Logo.png" /></a>
+						</div>
+						<ul class="list-inline">
+						
+						   <li class='list-inline-item'>
 								<h3> ¡Hola [nombre de agente] ! </h3>
 						   </li>
+                            <li class="list-inline-item"> 
+								<button type="button" class="btn btn-primary reporte-cliente" onclick="location='../HTML/reporte-clientes-atendidos.html'">
+									<strong> Reporte de clientes </strong>
+								</button>
+							</li>
+                               <li class="list-inline-item"> 
+								<button type="button" class="btn btn-primary reporte-producto" onclick="location='../index.php'">
+									<strong> Reporte de productos </strong>
+								</button>
+							</li>
+                            <li class="list-inline-item"> 
+								<button type="button" class="btn btn-primary reporte-cliente-cliente" onclick="location='../HTML/reporte-clientes.html'">
+									<strong> Reporte de clientes </strong>
+								</button>
+							</li>
 							<li class="list-inline-item"> 
 								<button type="button" class="btn btn-primary logout" onclick="location='../index.php'">
 									<strong> Cerrar sesion </strong>
 								</button>
 							</li>
-                    </ul>
-                </div>
-        </nav>
+						</ul>
+					</div>
+			</nav>
     </body>
+   <div class="btn-paginas btn-paginas-cerrar">
+        <button class="btn" id="btn-close">X</button>   
+    </div>
        <div class="panel-body msg_container_base panel-body-solicitud">
                     <div class="row msg_container base_sent">
                         <div class="col-md-2 col-xs-2 avatar">
@@ -54,7 +73,9 @@
                         </span>
                 </div>
                 </div>
-      
+      <div class="btn-paginas btn-paginas-solicitud">
+        <button class="btn" id="btn-atender">Atender</button>   
+    </div>
     <!---<section class="info-user">
         <div>
             <span class="fecha">

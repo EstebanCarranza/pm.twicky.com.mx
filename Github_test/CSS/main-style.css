@@ -15,6 +15,7 @@ body{
 }
 .panel-body-solicitud{
     padding: 20px;
+    margin-top: 28px;
 }
 
 #time-initial{
