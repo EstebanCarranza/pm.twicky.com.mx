@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Reporte Clientes</title>
-    
-	<link rel="stylesheet"  type="text/css" href="../CSS/main-style.css">
-	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../CSS/form-elements.css"/>
     <link rel="stylesheet" type="text/css" href="../CSS/reporte-cliente.css"/>
     <script src="../JS/jquery-3.1.1.min.js" type="text/javascript"></script>
     <script src="../JS/reporte-clientes.js" type="text/javascript"></script>
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 	
 </head>
 <body>
