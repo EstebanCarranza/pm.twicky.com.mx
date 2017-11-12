@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../Images/Logo.png">
+    <script type="text/javascript" src="validations.js" ></script>
 
     <title>Inicio de sesion</title>
 
@@ -54,7 +55,7 @@
           </div>
           <div class="form-group">
 			<label class="sr-only" for="form-email">Email</label>
-			<input type="email" name="form-email" placeholder="Correo..." class="form-email form-control" id="form-email" required>
+			<input type="email" name="form-email" placeholder="Correo..." class="form-email form-control" id="form-email" onblur="validaremail();" required><label id="validate"></label>
 		</div>
 		<div class="form-group">
         <label for="inputPassword" class="sr-only">Contraseña</label>
