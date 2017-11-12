@@ -29,13 +29,15 @@ box-shadow: none;
 }
 
 .btn-anterior{
-    background: transparent !important;
-    color: black !important;
+    background: #294658;
+    width: 150px;
+    height: 150px;
+    color: white!important;
 }
 
 .btn-paginas{
-    float: right;
-    margin-right: 45px;
+margin: 8px auto;
+width: 350px;
 }
 
 h3{
@@ -43,12 +45,14 @@ h3{
 }
 
 .btn-siguiente:hover,.btn-anterior:hover{
-    color: #294658 !important;
+    color: white !important;
 }
 
 .btn-siguiente{
-    margin-left: 20px;
+    margin-left: 30px !important;
     margin-right: 20px;
-    background: transparent !important;
-    color: black !important;
+    width: 150px;
+    height: 150px;
+    background: #294658;
+    color: white!important;
 }
