@@ -10,6 +10,12 @@ body{
 #time-final{
     float: right;
 }
+.time{
+    font-size: 12px;
+}
+.panel-body-solicitud{
+    padding: 20px;
+}
 
 #time-initial{
     position: absolute; !important
