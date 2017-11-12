@@ -38,6 +38,7 @@
       <form class="form-signin" action='php/post.login.php' method='post'>
         <label for="inputEmail" class="sr-only">Correo electrónico</label>
              <div class="form-group">
+                 <label class="label-incorrect label-hide"><strong>  *La contraseña/usuario no son correctos</strong></label>
 				                        	<label class="sr-only" for="form-email">Email</label>
 				                        	<input type="email" name="form-email" placeholder="Correo..." class="form-email form-control" id="form-email" required>
 				                        </div>

@@ -131,6 +131,16 @@ textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeh
     margin-bottom: 10px;
     margin-top: -56px;
 }
+.label-incorrect{
+    color: #810609;
+    font-size: 14px;
+}
+.label-hide{
+    display: none;
+}
+.label-show{
+    display: block;
+}
 .btn-paginas-solicitud{
     margin: 0 auto;
     width: 300px;
