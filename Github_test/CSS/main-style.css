@@ -47,6 +47,9 @@ body{
     border: none !important;
     background: #294658;
     margin-left:150px; 
+   box-shadow: 2px 3px 2px #000;
+  -webkit-box-shadow: 2px 3px 2px #000;
+   -moz-box-shadow: 2px 3px 2px #000;
 }
 
 #btn-descubre{
@@ -57,9 +60,9 @@ body{
 #btn-descubre{
     border: none !important;
     background: #bfa68f;
-    box-shadow: 10px 10px 5px #888888;
-   -webkit-box-shadow: 10px 10px 5px #888888;
-   -moz-box-shadow: 10px 10px 5px #888888;
+    box-shadow: 2px 3px 2px #000;
+  -webkit-box-shadow: 2px 3px 2px #000;
+   -moz-box-shadow: 2px 3px 2px #000;
 }
 
 .list-inline-item:not(.btn){
