@@ -18,7 +18,7 @@
                 </li>
                 <li class='list-inline-item'> 
                     <button type='button' class='btn btn-primary reporte-cliente' onclick=ir_a('reporte-clientes.php') >
-                        <strong> Reporte de clientes </strong>
+                        <strong> Reporte atendidos </strong>
                     </button>
                 </li>
                 <li class='list-inline-item'> 
