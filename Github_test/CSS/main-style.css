@@ -160,15 +160,3 @@ h3{
   border-color: #428bca; }
 .checkbox-primary input[type="checkbox"]:checked + label::after {
   color: #fff; }
-
-.carousel-img{
-  opacity: 0.5;
-  width: 100%;
-  max-height: 750px;
-}
-
-@media (max-width: 660px) {
-  .carousel-img{
-    height: 50%;
-  }
-}

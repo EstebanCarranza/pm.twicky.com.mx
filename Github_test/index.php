@@ -36,11 +36,11 @@
             <button type="button" class="btn btn-primary" id="btn-descubre" onclick="location='HTML/contacto.php'"><strong>Cursos Disponibles</strong></button>
 		</div>
     </section> -->
-  <div id="myCarousel" class="carousel slide" data-interval="3000" style="margin-top: -20px">
+  <div id="myCarousel" class="carousel slide" data-interval="5000" style="margin-top: -20px">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active" height="500px">
-        <img src="Images/fondo.jpg" class="carousel-img img-responsive" alt="Chania">
+        <img src="Images/1439.jpg" class="carousel-img img-responsive" alt="Chania">
         <div class="carousel-caption"> 
             <h1>¿Deseas aprender edición?</h1>
             <p>Cursos las 24 horas con los mejores profesores</p>
@@ -50,11 +50,11 @@
       </div>
 
       <div class="item" height="500px">
-        <img src="Images/fondo1.jpg" class="carousel-img img-responsive" alt="Chania">
+        <img src="Images/1547.jpg" class="carousel-img img-responsive" alt="Chania">
         <div class="carousel-caption">  
             <h1>¿O tal vez aprender diseño?</h1>
             <p>Cursos las 24 horas con los mejores profesores</p>
-            <button type="button" class="btn btn-primary" id="btn-descubre" onclick="location='HTML/contacto.php'"><strong>Cursos Disponibles</strong></button>
+            <button type="button" class="btn btn-primary" id="btn-descubre" onclick="location='HTML/lista-cursos.html'"><strong>Cursos Disponibles</strong></button>
         </div>
       </div>
     </div>

@@ -1,0 +1,241 @@
+<DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesion </title>
+    
+	<link rel="stylesheet" href="../CSS/main-style.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/form-elements.css"/>
+    <link rel="stylesheet" type="text/css" href="../CSS/main-style.css"/>
+	<script src="../JS/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript"> 
+		$(document).ready(
+			function()
+			{
+				$(".dash-cliente").hide();
+			}
+		);
+		
+	</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../index.html"><img  class="logo" src="../Images/Logo.png" /></a>
+                    </div>
+                    <ul class="list-inline">
+					<li class="list-inline-item"> 
+							<button id='btn-agente' type="button" class="btn btn-primary logout">
+								<strong> Ejemplo agente </strong>
+							</button>
+						</li>
+						<li class="list-inline-item"> 
+							<button id='btn-cliente' type="button" class="btn btn-primary logout">
+								<strong> Ejemplo cliente </strong>
+							</button>
+						</li>
+                       <li class='list-inline-item'>
+							<strong class='welcome-label font-big'> ¡Bienvenido [nombre de agente] ! </strong>
+					   </li>
+                        <li class="list-inline-item"> 
+							<button type="button" class="btn btn-primary logout" onclick="location='../index.html'">
+								<strong> Cerrar sesion </strong>
+							</button>
+						</li>
+                    </ul>
+                </div>
+        </nav>
+</header>
+    
+	<section class='content dash-agente'>
+		<table class="table table-hover table-striped table-responsive">
+			<thead class="thead-inverse table-head-row fixed-section">
+				<tr class='align-center font-big'>
+					<th colspan='8'> Solicitudes de clientes y prospectos </th>
+				</tr>
+				<tr>
+					<th scope='col' id='td-col-fecha'> 		Fecha de registro 		</th>
+					<th scope='col' id='td-col-comentario'> Comentario	 			</th>
+					<th scope='col' id='td-col-producto'> 	Producto 				</th>
+					<th scope='col' id='td-col-tipoCon'> 	Tipo de contacto 		</th>
+					<th scope='col' id='td-col-agente'> 	Agente					</th>
+					<th scope='col' id='td-col-fechaSeg'> 	Fecha de seguimiento 	</th>
+					<th scope='col' id='td-col-fechaFin'> 	Fecha de finalización 	</th>
+					<th scope='col' id='td-col-estado'> 	Estado 					</th>
+				</tr>
+			</thead>
+			<tbody class='table-body'>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Hola </td>
+					<td> Curso de photoshop </td>
+					<td> Es prospecto </td>
+					<td> Sin asignar </td>
+					<td> Sin seguimiento </td>
+					<td> Sin finalizar </td>
+					<td> 
+						<button type='button' class='btn btn-primary center-obj edo-sinCalificar' onclick="location='solicitud.html?id=1'"> Sin calificar </button> 
+					</td>
+				</tr>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Hola </td>
+					<td> Curso de photoshop </td>
+					<td> Es prospecto </td>
+					<td> Sin asignar </td>
+					<td> Sin seguimiento </td>
+					<td> Sin finalizar </td>
+					<td> 
+						<button type='button' class='btn btn-primary center-obj edo-sinCalificar' onclick="location='solicitud.html?id=1'"> Sin calificar </button> 
+					</td>
+				</tr>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Hola </td>
+					<td> Curso de photoshop </td>
+					<td> Es prospecto </td>
+					<td> Pancho </td>
+					<td> Sin seguimiento </td>
+					<td> Sin finalizar </td>
+					<td> 
+						<button type='button' class='btn btn-primary center-obj edo-Calificando' onclick="location='solicitud.html?id=1'"> Calificando </button> 
+					</td>
+				</tr>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Hola </td>
+					<td> Curso de photoshop </td>
+					<td> Es prospecto </td>
+					<td> Pancho </td>
+					<td> Sin seguimiento </td>
+					<td> Sin finalizar </td>
+					<td> 
+						<button type='button' class='btn btn-primary center-obj edo-Calificado' onclick="location='solicitud.html?id=1'"> Calificado </button> 
+					</td>
+				</tr>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Hola </td>
+					<td> Curso de photoshop </td>
+					<td> Es prospecto </td>
+					<td> Pancho </td>
+					<td> Sin seguimiento </td>
+					<td> Sin finalizar </td>
+					<td> 
+						<button type='button' class='btn btn-primary center-obj edo-Calificando' onclick="location='solicitud.html?id=1'"> Calificando </button> 
+					</td>
+				</tr>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Hola </td>
+					<td> Curso de photoshop </td>
+					<td> Es prospecto </td>
+					<td> Pancho </td>
+					<td> Sin seguimiento </td>
+					<td> Sin finalizar </td>
+					<td> 
+						<button type='button' class='btn btn-primary center-obj edo-Calificando' onclick="location='solicitud.html?id=1'"> Calificando </button> 
+					</td>
+				</tr>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Hola </td>
+					<td> Curso de photoshop </td>
+					<td> Es prospecto </td>
+					<td> Pancho </td>
+					<td> Sin seguimiento </td>
+					<td> Sin finalizar </td>
+					<td> 
+						<button type='button' class='btn btn-primary center-obj edo-Calificando' onclick="location='solicitud.html?id=1'"> Calificando </button> 
+					</td>
+				</tr>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Hola </td>
+					<td> Curso de photoshop </td>
+					<td> Es prospecto </td>
+					<td> Pancho </td>
+					<td> Sin seguimiento </td>
+					<td> Sin finalizar </td>
+					<td> 
+						<button type='button' class='btn btn-primary center-obj edo-Calificando' onclick="location='solicitud.html?id=1'"> Calificando </button> 
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+    </section>
+
+	<section class='content dash-cliente'>
+		<table class="table table-hover table-striped table-responsive">
+			<thead class="thead-inverse table-head-row" >
+				<tr class='align-center font-big'>
+					<th colspan='4'> Mis solicitudes </th>
+				</tr>
+				<tr class='w-100'>
+					<th scope='col' id='td-col-fecha' class='w-25'> 		Fecha de registro 		</th>
+					<th scope='col' id='td-col-producto' class='w-25'> 	Producto 				</th>
+					<th scope='col' id='td-col-comentario' class='w-25'> Comentario	 			</th>
+					<th scope='col' id='td-col-estado' class='w-25'> 	Estado 					</th>
+				</tr>
+			</thead>
+			<tbody class='table-body'>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Curso de photoshop </td>
+					<td> Hola </td>
+					<td> Sin finalizar </td>
+				</tr>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Curso de photoshop </td>
+					<td> Hola </td>
+					<td> Sin finalizar </td>
+				</tr>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Curso de photoshop </td>
+					<td> Hola </td>
+					<td> Sin finalizar </td>
+				</tr>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Curso de photoshop </td>
+					<td> Hola </td>
+					<td> Sin finalizar </td>
+				</tr>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Curso de photoshop </td>
+					<td> Hola </td>
+					<td> Sin finalizar </td>
+				</tr>
+				<tr>
+					<td> 30/10/2017 </td>
+					<td> Curso de photoshop </td>
+					<td> Hola </td>
+					<td> Sin finalizar </td>
+				</tr>
+				
+			</tbody>
+		</table>
+    </section>
+
+	
+</body>
+<script>
+$("#btn-agente").click(function()
+	{
+		$(".dash-agente").toggle();
+	}
+);
+
+$("#btn-cliente").click(function()
+	{
+		$(".dash-cliente").toggle();
+	}
+);
+</script>
+</DOCTYPE>

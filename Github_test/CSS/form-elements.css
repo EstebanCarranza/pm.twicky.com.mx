@@ -1,7 +1,7 @@
 select,
 input[type="text"], 
 input[type="password"], 
-input[type="tel"]:-moz-placeholder,
+input[type="tel"],
 textarea, 
 textarea.form-control {
 	height: 50px;
@@ -99,7 +99,7 @@ textarea.form-control {
 }
 select,
 input[type="text"]:focus, 
-input[type="password"]:focus,input[type="tel"]:-moz-placeholder:focus,
+input[type="password"]:focus,input[type="tel"],
 textarea:focus, 
 textarea.form-control:focus {
 	outline: 0;
