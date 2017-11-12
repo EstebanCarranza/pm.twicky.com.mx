@@ -21,7 +21,7 @@
       <li><a href="#">Cliente</a></li>
       <li><a href="#">Fecha</a></li>
     </ul></div>
-    <table class="table">
+    <table class="table table-hover">
   <thead class="thead-inverse">
     <tr>
       <th>Nombre</th>
