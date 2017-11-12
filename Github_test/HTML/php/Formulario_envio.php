@@ -18,11 +18,11 @@ table{
 
 <body>
 
-<form name="formulario_contacto" method="post" action="EnvioCorreo.php">
+<form name="formulario_contacto" method="post" action="EnvioCorreo2.php">
 <table width="500px">
 <tr>
 <td>
-<label for="nombre">Nombre: *</label>
+<label for="nombre">eNombre: *</label>
 </td>
 <td>
 <input type="text" name="nombre" maxlength="50" size="25">
