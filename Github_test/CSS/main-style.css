@@ -15,9 +15,8 @@ body{
 }
 .panel-body-solicitud{
     padding: 20px;
-    margin-top: 28px;
+    margin-top: 73px;
 }
-
 #time-initial{
     position: absolute; !important
 }
@@ -26,7 +25,6 @@ body{
     width: 100%;
     height: 20%;
 }
-
 .navbar{
     background-color: #294658;
     height: 65px;

@@ -17,7 +17,7 @@
         include('header.php');
     ?>
    <div class="btn-paginas btn-paginas-cerrar">
-        <button class="btn" id="btn-close">X</button>   
+        <button class="btn" id="btn-close">Cerrar folio</button>   
     </div>
        <div class="panel-body msg_container_base panel-body-solicitud">
                     <div class="row msg_container base_sent">
@@ -38,12 +38,12 @@
            <div class="input-group">
                         <input id="btn-input" type="text" class="form-control input-sm response_input" placeholder="Escribenos la respuesta al cliente aquí..." />
                         <span class="input-group-btn">
-                        <button class="btn btn-primary btn-sm" id="btn-chat">Enviar</button>
+                        <button class="btn btn-primary btn-sm" id="btn-chat">Responder</button>
                         </span>
                 </div>
                 </div>
       <div class="btn-paginas btn-paginas-solicitud">
-        <button class="btn" id="btn-atender">Atender</button>   
+        <button class="btn" id="btn-atender">Atender folio</button>   
     </div>
     <!---<section class="info-user">
         <div>

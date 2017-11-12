@@ -43,8 +43,8 @@ textarea.form-control {
 }
 
 #form-telephone{
-    height: 50px;
-    margin: 0;
+height: 50px;
+margin: 0;
 padding: 0 20px;
 vertical-align: middle;
 background: #f8f8f8 !important;
@@ -127,17 +127,18 @@ input[type="text"]::-webkit-input-placeholder, input[type="tel"]:-moz-placeholde
 textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #888; }
 .btn-paginas-cerrar{
     float: right;
-        margin-right: 5px;
+    margin-right: 10px;
     margin-bottom: 10px;
+    margin-top: -56px;
 }
 .btn-paginas-solicitud{
     margin: 0 auto;
     width: 300px;
 }
 #btn-close:hover,#btn-close:active,#btn-close:focus{
-    background: transparent !important;
+    background: red !important;
     border: none !important;
-    color: #810609 !important;
+    color: white !important;
 }
 .btn-calificado{
     background: #517B30 !important;
@@ -149,9 +150,9 @@ textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeh
     background: #CFBE21 !important;
 }
 #btn-close{
-    background: transparent;
-    color: red;
-    width: 50px;
+    background: #810609 !important;
+    color: white;
+    width: 150px;
     height: 50px;
     font-weight: bolder;
     font-size: 20px;
