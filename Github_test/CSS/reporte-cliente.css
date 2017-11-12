@@ -12,9 +12,11 @@ margin-right: 10px;
 thead th{
     color: white;
 }
+
 .dropdown{
     display: contents;
 }
+
 .dropdown button,.dropdown button:focus,.dropdown button:hover{
 width: 200px !important;
 height: 44px;

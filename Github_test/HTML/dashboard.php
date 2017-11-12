@@ -1,7 +1,7 @@
 <DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Inicio de sesion </title>
+    <title>Twicky</title>
     
 	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../CSS/form-elements.css"/>
@@ -29,6 +29,11 @@
                                <li class="list-inline-item"> 
 								<button type="button" class="btn btn-primary reporte-producto" onclick="location='../index.php'">
 									<strong> Reporte de productos </strong>
+								</button>
+							</li>
+                             <li class="list-inline-item"> 
+								<button type="button" class="btn btn-primary reporte-cliente-cliente" onclick="location='../HTML/reporte-clientes.html'">
+									<strong> Reporte de clientes </strong>
 								</button>
 							</li>
 							<li class="list-inline-item"> 
