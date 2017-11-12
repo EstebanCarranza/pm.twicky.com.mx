@@ -146,10 +146,10 @@ button.btn {
     -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
 
-button.btn:hover { opacity: 0.6; color: #fff;  cursor: pointer;}
+button.btn:hover { background: #4C5D7B !important;  color: #fff;  cursor: pointer;}
 
 button.btn:active { outline: 0; opacity: 0.6; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 
-button.btn:focus { outline: 0; opacity: 0.6; background: #19b9e7; color: #fff; }
+button.btn:focus { outline: 0; opacity: 0.6; background: #4C5D7B; color: #fff; }
 
-button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: #19b9e7; color: #fff; }
+button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: #4C5D7B !important; color: #fff; }
