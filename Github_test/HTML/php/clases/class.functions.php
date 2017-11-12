@@ -14,17 +14,22 @@ class funciones
 		if($start_destroy)
 		{
 			
-			session_start();
-			if
+                        
+                        if
 			(
-				(!isset($_SESSION['idUsuario'])) ||
-				(!isset($_SESSION['tipoUsuario']))
+				(!isset($_SESSION['idUsuario']))        ||
+				(!isset($_SESSION['tipoUsuario']))      ||
+                                (!isset($_SESSION['nombreUsuario']))
 			)
 			{
+                            /*
 				session_unset();
 				session_destroy();
 				if($pag_redirect)
                                     header("Location: $pag_to_redirect");
+                             * */
+                            session_start();  
+                            
 			}
 
 		}

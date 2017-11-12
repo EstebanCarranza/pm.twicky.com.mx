@@ -26,12 +26,12 @@ class usuario
 				$_SESSION['idUsuario'] = $res['idUsuario'];
 				$_SESSION['tipoUsuario'] = $res['tipoUsuario'];
                                 $_SESSION['nombreUsuario'] = $res['nombreUsuario'];
-                                header('Location: ../header.php');
+                                header('Location: ../dashboard.php');
 				//echo "<script>window.location = '../header.php';</script>";
 			}
 			else
 			{
-				echo "<script>window.location ='../login.php'; </script>";
+				header('Location: ../login.php');
 			}
 			
 		}

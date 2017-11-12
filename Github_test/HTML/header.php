@@ -26,6 +26,11 @@
                         <strong> Reporte de productos </strong>
                     </button>
                 </li>
+                <li class="list-inline-item"> 
+                    <button type="button" class="btn btn-primary reporte-cliente-cliente" onclick="location='../HTML/reporte-clientes.html'">
+                        <strong> Reporte de clientes </strong>
+                    </button>
+                </li>
                 <li class='list-inline-item'>
                     <form method='post'>
                     <button name='logout' type='submit' class='btn btn-primary logout' >
