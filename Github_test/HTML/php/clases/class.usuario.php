@@ -25,7 +25,9 @@ class usuario
 				session_start();
 				$_SESSION['idUsuario'] = $res['idUsuario'];
 				$_SESSION['tipoUsuario'] = $res['tipoUsuario'];
-				echo "<script>window.location = '../dashboard.php';</script>";
+                                $_SESSION['nombreUsuario'] = $res['nombreUsuario'];
+                                header('Location: ../header.php');
+				//echo "<script>window.location = '../header.php';</script>";
 			}
 			else
 			{
@@ -100,6 +102,11 @@ class usuario
 		$datos->cerrar_conexion(true, $result);
 	}
 	
+        public function logout()
+        {
+            $fun->session(false, false, '','');
+	
+        }
 };
 
 ?>

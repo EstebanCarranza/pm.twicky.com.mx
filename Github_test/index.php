@@ -11,12 +11,6 @@
     <!--<script src="JS/bootstrap.min.js" type="text/javascript"></script>-->
     <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 	<!--<script src="JS/jquery.nivo.slider.js"></script> -->
-	<?php
-		require_once 'HTML/php/clases/class.functions.php';
-		$fun = new funciones();
-
-		$fun->session(false, false, '','');
-	?>
 </head>
 <body>
     <!-- <section class="slider-wrapper theme-mi-slider">

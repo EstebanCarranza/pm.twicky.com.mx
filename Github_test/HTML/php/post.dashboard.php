@@ -14,27 +14,27 @@
 	
 	switch($tipo)
 	{
-		case 'Cliente':
-			echo "
-				<section class='content dash-cliente'>
-					<table class='table table-hover table-striped table-responsive'>
-						<thead class='thead-inverse table-head-row' >
-							<tr class='align-center font-big'>
-								<th colspan='4'> Mis solicitudes </th>
-							</tr>
-							<tr class='w-100'>
-								<th scope='col' id='td-col-fecha' class='w-25'> 		Fecha de registro 		</th>
-								<th scope='col' id='td-col-producto' class='w-25'> 	Producto 				</th>
-								<th scope='col' id='td-col-comentario' class='w-25'> Comentario	 			</th>
-								<th scope='col' id='td-col-estado' class='w-25'> 	Estado 					</th>
-							</tr>
-						</thead>
-						<tbody class='table-body'>";
-							$dash->getListaSolicitudesPorCliente($id, 'DESC', 0, 10);
-						echo "</tbody>
-					</table>
-				</section>";
-		break;
+            case 'Cliente':
+                echo "
+                    <section class='content dash-cliente'>
+                        <table class='table table-hover table-striped table-responsive'>
+                            <thead class='thead-inverse table-head-row' >
+                                <tr class='align-center font-big'>
+                                        <th colspan='4'> Mis solicitudes </th>
+                                </tr>
+                                <tr class='w-100'>
+                                    <th scope='col' id='td-col-fecha' class='w-25'> 		Fecha de registro 		</th>
+                                    <th scope='col' id='td-col-producto' class='w-25'> 	Producto 				</th>
+                                    <th scope='col' id='td-col-comentario' class='w-25'> Comentario	 			</th>
+                                    <th scope='col' id='td-col-estado' class='w-25'> 	Estado 					</th>
+                                </tr>
+                            </thead>
+                            <tbody class='table-body'>";
+                                $dash->getListaSolicitudesPorCliente($id, 'DESC', 0, 10);
+                    echo    "</tbody>
+                        </table>
+                    </section>";
+            break;
 		
 		case 'Agente':
 			echo "

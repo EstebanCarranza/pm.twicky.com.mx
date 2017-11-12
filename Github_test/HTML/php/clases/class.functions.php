@@ -24,7 +24,7 @@ class funciones
 				session_unset();
 				session_destroy();
 				if($pag_redirect)
-				echo "<script> alert('$pag_message'); window.location = '$pag_to_redirect'; </script>";
+                                    header("Location: $pag_to_redirect");
 			}
 
 		}
@@ -37,7 +37,7 @@ class funciones
 			}
 			
 			if($pag_redirect)
-				echo "<script> window.location = '$pag_to_redirect'; </script>";
+				header("Location: $pag_to_redirect");
 		}
 	}
 	

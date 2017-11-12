@@ -1,9 +1,5 @@
 <?php
-
-/* 
-    esteban.carranza
- */
-  
+  require_once 'php/post.header.php';
     
 ?>
 <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css"/>
@@ -18,7 +14,7 @@
             </div>
             <ul class='list-inline'>
                 <li class='list-inline-item'>
-                    <h3> ¡Hola [nombre de agente] ! </h3>
+                    <h3> ¡Bienvenido <?php echo $nombre ?>! </h3>
                 </li>
                 <li class='list-inline-item'> 
                     <button type='button' class='btn btn-primary reporte-cliente' onclick=ir_a('reporte-clientes.php') >
@@ -30,13 +26,14 @@
                         <strong> Reporte de productos </strong>
                     </button>
                 </li>
-                <li class='list-inline-item'> 
-                    <button type='button' class='btn btn-primary logout' onclick='location='../index.php''>
+                <li class='list-inline-item'>
+                    <form method='post'>
+                    <button name='logout' type='submit' class='btn btn-primary logout' >
                         <strong> Cerrar sesion </strong>
                     </button>
+                    </form>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
-
