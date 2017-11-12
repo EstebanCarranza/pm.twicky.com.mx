@@ -42,7 +42,8 @@ class funciones
 			}
 			
 			if($pag_redirect)
-				header("Location: $pag_to_redirect");
+				//header("Location: $pag_to_redirect");
+                            echo "<script>window.location='$pag_to_redirect'</script>";
 		}
 	}
 	
