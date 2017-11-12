@@ -1,0 +1,54 @@
+table{
+margin-top:10px;
+margin-left: 10px;
+margin-right: 10px;
+    width: 98% !important;
+}
+
+.thead-inverse{
+    background: #292b2c;
+}
+
+thead th{
+    color: white;
+}
+.dropdown{
+    display: contents;
+}
+.dropdown button,.dropdown button:focus,.dropdown button:hover{
+width: 200px !important;
+height: 44px;
+background: transparent;
+float: right;
+margin-right: 10px;
+color: #294658;
+margin-bottom: 6px;
+margin-top: 6px;
+border: none;
+box-shadow: none;
+}
+
+.btn-anterior{
+    background: transparent !important;
+    color: black !important;
+}
+
+.btn-paginas{
+    float: right;
+    margin-right: 45px;
+}
+
+h3{
+    color: white;
+}
+
+.btn-siguiente:hover,.btn-anterior:hover{
+    color: #294658 !important;
+}
+
+.btn-siguiente{
+    margin-left: 20px;
+    margin-right: 20px;
+    background: transparent !important;
+    color: black !important;
+}

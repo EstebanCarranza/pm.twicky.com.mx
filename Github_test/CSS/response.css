@@ -1,0 +1,79 @@
+.info-user{
+ background-color: #2a4759;
+width: 30%;
+position: absolute;
+float: left;
+margin-top: 5%;
+margin-left: 5%;
+color: white;
+height: 590px;
+}
+
+div>h3,h5{
+    color: #18719c;
+    font-weight: bold;
+}
+
+.important{
+    color: red;
+    font-weight: bold;
+    font-size: 27px;
+    text-align: right;
+    margin-right: 15px;
+}
+
+#estado{
+    margin-top: 27px;
+}
+
+.header{
+    background-color: #2a4759;
+    padding: 1%;
+    text-align: center;
+}
+
+textarea{
+    height: 115px !important;
+}
+
+.form-bottom{
+  margin-top: 5%;
+margin-left: 5%;
+margin-right: 5%;
+}
+
+.col-sm-5 {
+    -ms-flex: 1 0 41.666667%;
+    flex: 1 0 41.666667%;
+    max-width: 100%;
+    margin-top: 27px;
+}
+
+.form-response{
+ background-color: gainsboro;
+width: 43%;
+float: right;
+margin-top: 94px;
+margin-right: 5%;
+height: 596px;
+}
+
+.fecha{
+    float:left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.tipo{
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.info{
+    margin-top: 35px;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}

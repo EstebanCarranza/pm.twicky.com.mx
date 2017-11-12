@@ -1,0 +1,87 @@
+.content
+{
+	margin:80px auto;
+	width:91%;
+	
+}
+.navbar-header{
+float: left;
+margin-left: 16px;
+margin-top: 16px;
+}
+.login{
+    margin-left: 20%;
+}
+.center-obj
+{
+	width:100%;
+	box-sizing:border-box;
+	margin-top:0px;
+}
+.edo-sinCalificar
+{
+	background-color:#2980b9;
+}
+.edo-Calificando
+{
+	background-color:#e67e22;
+}
+.edo-Calificando:hover
+{
+	background-color:#d35400;
+}
+.edo-Calificado
+{
+	background-color:#2ecc71;
+}
+.edo-Calificado:hover
+{
+	background-color:#27ae60;
+}
+.table-head-row
+{
+	background-color:#2c3e50;
+	color:whitesmoke;
+}
+.table-head-row:hover
+{
+	background-color:#2c3e50;
+}
+.logout
+{
+	margin-top:5px;
+background-color:#2980b9;
+
+}
+.logout:hover
+{
+	background-color:#d35400;
+}
+.align-center
+{
+	text-align:center;
+}
+.font-big
+{
+	font-size:150%;
+}
+.welcome-label
+{
+	color:whitesmoke;
+}
+
+.navbar-fixed-top
+{
+	top:0px;
+	width:100%;
+	position:fixed;
+}
+.all-section
+{
+	width:100%;
+	background-color:blue;
+}
+.table
+{
+	width:100%;
+}
