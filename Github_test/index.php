@@ -42,8 +42,8 @@
       <div class="item active" height="500px">
         <img src="Images/1439.jpg" class="carousel-img img-responsive" alt="Chania">
         <div class="carousel-caption"> 
-            <h1>¿Deseas aprender edición?</h1>
-            <p>Cursos las 24 horas con los mejores profesores</p>
+            <h1 class="sombreado">¿Deseas aprender edición?</h1>
+            <p class="sombreado">Cursos las 24 horas con los mejores profesores</p>
             <button type="button" class="btn btn-primary" id="btn-register" onclick="location='HTML/correo.html'"><strong>Registrar</strong></button>
             <button type="button" class="btn btn-primary" id="btn-login" onclick="location='HTML/login.php'"><strong>Inicia Sesión</strong></button>
         </div>
@@ -52,8 +52,8 @@
       <div class="item" height="500px">
         <img src="Images/1547.jpg" class="carousel-img img-responsive" alt="Chania">
         <div class="carousel-caption">  
-            <h1>¿O tal vez aprender diseño?</h1>
-            <p>Cursos las 24 horas con los mejores profesores</p>
+            <h1 class="sombreado">¿O tal vez aprender diseño?</h1>
+            <p class="sombreado">Cursos las 24 horas con los mejores profesores</p>
             <button type="button" class="btn btn-primary" id="btn-descubre" onclick="location='HTML/lista-cursos.html'"><strong>Cursos Disponibles</strong></button>
         </div>
       </div>
