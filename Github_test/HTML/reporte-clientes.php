@@ -16,7 +16,7 @@
 	<?php
         include('header.php');
     ?>
-              <div class="dropdown">
+    <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" id="drop" type="button" data-toggle="dropdown">Dropdown Example
     <span class="caret"></span></button>
     <ul class="dropdown-menu">

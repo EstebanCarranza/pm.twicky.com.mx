@@ -139,7 +139,15 @@ textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeh
     border: none !important;
     color: #810609 !important;
 }
-
+.btn-calificado{
+    background: #517B30 !important;
+}
+.btn-sincalificar{
+     background: #810609 !important;
+}
+.btn-calificando{
+    background: #CFBE21 !important;
+}
 #btn-close{
     background: transparent;
     color: red;

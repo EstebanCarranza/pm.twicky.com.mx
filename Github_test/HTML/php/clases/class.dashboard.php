@@ -52,7 +52,7 @@ class dashboard
 					<td> $res[fechaSeguimiento] </td>
 					<td> $res[fechaCalificacion] </td>
 					<td> 
-						<button type='button' class='btn btn-primary center-obj edo-sinCalificar' onclick=$location> 
+						<button type='button' class='btn btn-primary center-obj btn-sincalificar' onclick=$location> 
 							$res[estado]
 						</button> 
 					</td>
