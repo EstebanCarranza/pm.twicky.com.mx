@@ -121,10 +121,10 @@ class usuario
                     switch($res['result'])
                     {
                         case 'el token ya esta activo':
-                            $mensaje = "El correo ya ha sido validado anteriormente :)";
+                            $mensaje = "El correo $correo ya ha sido validado anteriormente :)";
                         break;
                             case 'el token ya existe':
-                                $mensaje = "El correo aun no ha sido validado, te reenviamos el correo de confimación nuevamente para que puedas continuar con tu registro :)";
+                                $mensaje = "El correo aun no ha sido validado, te reenviamos un mensaje de confimación al siguiente correo: $correo para que puedas continuar con tu registro :)";
                                 $token = $res['token'];
                                 $destino = $res ['correoElectronico'];
                                 
@@ -144,7 +144,7 @@ class usuario
                             break;
 
                             case 'correcto token insertado': 
-                                $mensaje = "Gracias por iniciar el proceso de registro :), por favor revisa tu correo para continuar con el registro";
+                                $mensaje = "Gracias por iniciar el proceso de registro :), por favor revisa tu correo ($correo) para continuar con el registro";
                                 
                                 $token = $res['token'];
                                 $destino = $res ['correoElectronico'];
