@@ -26,6 +26,7 @@
         <script type="text/javascript" src="../JS/bootstrap-timepicker.js"></script>
         <script type="text/javascript" src="../JS/bootstrap-datetimepicker.min.js"></script>
         <script type="text/javascript" src="../JS/cursos.js"></script>
+	<script type="text/javascript" src="cargaprod.js" ></script>
     </head>
     <body>
        <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -83,7 +84,7 @@
 				                        	<input type="tel" name="form-telephone" placeholder="Teléfono..." class="form-telephone form-control" id="form-telephone" required>
 				                        </div>
                                   <div class="form-group">
-				                        	<select name='form-producto' id="products-combo" class="form-control">
+				                        	<select name='form-producto' id="products-combo" onclick="productos();" class="form-control">
                                   <option value='1'>Selecciona un curso...</option>
                                   </select>
 				                        </div>
