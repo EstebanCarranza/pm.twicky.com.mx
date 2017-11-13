@@ -1,5 +1,6 @@
 ﻿<DOCTYPE html>
 <head>
+    <?php require_once 'HTML/php/get.token.php'; ?>
     <meta charset="UTF-8">
     <title>Twicky</title>
     <link rel="stylesheet" type="text/css" href="CSS/dashboard.css"/>
@@ -38,7 +39,7 @@
         <div class="carousel-caption"> 
             <h1 class="sombreado">¿Deseas aprender edición?</h1>
             <p class="sombreado">Cursos las 24 horas con los mejores profesores</p>
-            <button type="button" class="btn btn-primary" id="btn-register" onclick="location='HTML/correo.html'"><strong>Registrar</strong></button>
+            <button type="button" class="btn btn-primary" id="btn-register" onclick="location='HTML/correo.php'"><strong>Registrar</strong></button>
             <button type="button" class="btn btn-primary" id="btn-login" onclick="location='HTML/login.php'"><strong>Inicia Sesión</strong></button>
         </div>
       </div>
