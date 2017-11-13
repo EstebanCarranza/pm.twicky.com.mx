@@ -120,6 +120,9 @@ class usuario
             {
                     switch($res['result'])
                     {
+                        case 'el token ya esta activo':
+                            $mensaje = "El correo ya ha sido validado anteriormente :)";
+                        break;
                             case 'el token ya existe':
                                 $mensaje = "El correo aun no ha sido validado, te reenviamos el correo de confimación nuevamente para que puedas continuar con tu registro :)";
                                 $token = $res['token'];
@@ -168,11 +171,10 @@ class usuario
 
             $datos->cerrar_conexion(true, $result);
             
-            if($respuesta == "OK")
-            {
+           
                 $_SESSION['mensaje'] = $mensaje;
                 echo "<script>window.location='../correo.php?r=$respuesta';</script>";
-            }
+           
         }
         
         public function validarToken($token)
@@ -189,7 +191,10 @@ class usuario
 				case 'Token invalido':
                                     echo "<script> window.location='?mensaje=token invalido';</script>";
 				break;
-				
+                                case 'Token ya activo':
+                                    echo "<script> window.location='HTML/login.php';</script>";
+                                break;
+                            
 				case 'Token Correcto': 
                                     
                                         session_start();
