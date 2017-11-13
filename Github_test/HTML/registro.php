@@ -8,6 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../Images/Logo.png">
     <script type="text/javascript" src="validations.js" ></script>
+    <script type="text/javascript" src="validationTel.js" ></script>
 
     <title>Inicio de sesion</title>
 
@@ -51,7 +52,8 @@
           </div>
           <div class="form-group">
         <label for="inputCelular" class="sr-only">Celular</label>
-        <input type="tel" id="inputCelular" class="form-control form-telephone" placeholder="Celular..." required autofocus name='celular'>
+        <input type="tel" id="inputCelular" class="form-control form-telephone" placeholder="Celular..." onblur="validarcellphone();" required autofocus name='celular'>
+	<label id="validatetel"></label>
           </div>
           <div class="form-group">
 			<label class="sr-only" for="form-email">Email</label>
