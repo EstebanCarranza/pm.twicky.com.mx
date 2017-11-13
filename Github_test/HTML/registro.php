@@ -7,8 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../Images/Logo.png">
-    <script type="text/javascript" src="validations.js" ></script>
-    <script type="text/javascript" src="validationTel.js" ></script>
+    <script type="text/javascript" src="validationsEmail.js" ></script>
+    <script type="text/javascript" src="validationsReg.js" ></script>
 
     <title>Inicio de sesion</title>
 
@@ -65,7 +65,8 @@
           </div>
           <div class="form-group">
         <label for="inputPassword" class="sr-only">Contraseña</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Repetir Contraseña..." required name='contrasenia-02'>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Repetir Contraseña..." onblur="equalpassword();" required name='contrasenia-02'>
+	<label id="validatepass"></label>
           </div>
         <button class="btn" type="submit">Iniciar sesión</button>
       </form>
