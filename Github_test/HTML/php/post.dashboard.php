@@ -11,7 +11,27 @@
 	
 	$tipo = $_SESSION['tipoUsuario'];
 	$id = $_SESSION['idUsuario'];
-	
+        
+        
+        
+	$pag = 0;
+        $pagF = 10;
+        
+        
+        
+        if(isset($_GET['pag']))
+        {
+            $valPag = $_GET['pag'];
+            $pag = intVal($valPag, 10);
+            $pagF = intVal($pag, 10) + 10;
+            
+        }
+        
+        echo " 
+            
+                 ";
+        
+        
 	switch($tipo)
 	{
             case 'Cliente':
@@ -30,7 +50,7 @@
                                 </tr>
                             </thead>
                             <tbody class='table-body'>";
-                                $dash->getListaSolicitudesPorCliente($id, 'DESC', 0, 10);
+                                $dash->getListaSolicitudesPorCliente($id, 'DESC', $pag, $pagFin);
                     echo    "</tbody>
                         </table>
                         <div class='btn-paginas'><button class='btn-anterior btn'>Anterior</button><button class='btn-siguiente btn'>Siguiente</button></div>
@@ -57,10 +77,10 @@
                                             </tr>
                                     </thead>
                                     <tbody class='table-body'>";
-                                            $dash->getListaSolicitudes('DESC', 0, 10);
+                                            $dash->getListaSolicitudes('DESC', $pag, $pagF);
                                     echo "</tbody>
                                 </table>
-                                <div class='btn-paginas'><button class='btn-anterior btn'>Anterior</button><button class='btn-siguiente btn'>Siguiente</button></div>
+                                <div class='btn-paginas'><button class='btn-anterior btn' onclick=pagAnt($pag)>Anterior</button><button class='btn-siguiente btn' onclick=pagSig($pag)>Siguiente</button></div>
                             </section>
 				";
 		break;
