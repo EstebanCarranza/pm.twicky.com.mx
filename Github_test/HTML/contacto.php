@@ -29,6 +29,7 @@
 	<script type="text/javascript" src="cargaprod.js" ></script>
 	<script type="text/javascript" src="validationsEmail.js" ></script>
 	<script type="text/javascript" src="validationsCellphone.js" ></script>
+    <script type="text/javascript" src="validationsDays.js"></script>
     </head>
     <body>
        <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -95,25 +96,25 @@
                                         <div class="form-group"><h4>Selecciona los días en que deseas ser contactado:</h4></div>
 								<div class="form-group">
 									<label class="checkbox-inline">
-									<input name='form-day[]' class="checkbox checkbox-primary" id="checkbox2" type="checkbox"  value="L"> Lunes  
+									<input name='form-day[]' class="checkbox checkbox-primary" id="checkbox2" type="checkbox"  value="L" onclick="validarDias()"> Lunes  
 									</label>
 									<label class="checkbox-inline">
-									  <input name='form-day[]' class="checkbox checkbox-primary" id="checkbox2" type="checkbox" value="M"> Martes
+									  <input name='form-day[]' class="checkbox checkbox-primary" id="checkbox2" type="checkbox" value="M" onclick="validarDias()"> Martes
 									</label>
 									<label class="checkbox-inline">
-									  <input name='form-day[]' class="checkbox checkbox-primary" id="checkbox2" type="checkbox" value="X"> Miercoles 
+									  <input name='form-day[]' class="checkbox checkbox-primary" id="checkbox2" type="checkbox" value="X" onclick="validarDias()"> Miercoles 
 									</label>
 																	   <label class="checkbox-inline">
-									  <input name='form-day[]' class="checkbox checkbox-primary" id="checkbox2" type="checkbox" value="J"> Jueves    
+									  <input name='form-day[]' class="checkbox checkbox-primary" id="checkbox2" type="checkbox" value="J" onclick="validarDias()"> Jueves    
 									</label>
 																	   <label class="checkbox-inline">
-									  <input name='form-day[]' class="checkbox checkbox-primary"  id="checkbox2" type="checkbox" value="V"> Viernes     
+									  <input name='form-day[]' class="checkbox checkbox-primary"  id="checkbox2" type="checkbox" value="V" onclick="validarDias()"> Viernes     
 									</label>
 																	   <label class="checkbox-inline">
-									  <input name='form-day[]' class="checkbox checkbox-primary"  id="checkbox2" type="checkbox" value="S"> Sabado    
+									  <input name='form-day[]' class="checkbox checkbox-primary"  id="checkbox2" type="checkbox" value="S" onclick="validarDias()"> Sabado    
 									</label>
 																	   <label class="checkbox-inline">
-									  <input name='form-day[]' class="checkbox checkbox-primary" id="checkbox2" type="checkbox" value="D"> Domingo     
+									  <input name='form-day[]' class="checkbox checkbox-primary" id="checkbox2" type="checkbox" value="D" onclick="validarDias()"> Domingo     
 									</label>
                                 </div>
                                 <div class="form-group" id="container-date">
@@ -147,7 +148,7 @@
                                                     </label>
                                                </div>
 				                            <div class="form-group">
-                                                <button type="submit" class="btn"><strong>Enviar Solicitud</strong></button>
+                                                <button type="submit" class="btn" id="btn_submit"><strong>Enviar Solicitud</strong></button>
                                         </div>
 				                    </form>
 			                    </div>
