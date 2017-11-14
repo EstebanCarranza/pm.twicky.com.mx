@@ -168,6 +168,27 @@ textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeh
     font-size: 20px;
     margin-top: 8px;
 }
+.btn-siguiente:hover,.btn-anterior:hover{
+    color: white !important;
+}
+.btn-anterior{
+    background: #294658;
+    width: 150px;
+    height: 150px;
+    color: white!important;
+}
+.btn-paginas{
+margin: 8px auto;
+width: 350px;
+}
+.btn-siguiente{
+    margin-left: 30px !important;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    background: #294658;
+    color: white!important;
+}
 #btn-atender{
     background: #812534;
 }

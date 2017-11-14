@@ -16,7 +16,6 @@ thead th{
 .dropdown{
     display: contents;
 }
-
 .dropdown button,.dropdown button:focus,.dropdown button:hover{
 width: 200px !important;
 height: 44px;
@@ -32,33 +31,6 @@ box-shadow: none;
 td{
  font-size: 16px;   
 }
-.btn-anterior{
-    background: #294658;
-    width: 150px;
-    height: 150px;
-    color: white!important;
-}
-
-.btn-paginas{
-margin: 8px auto;
-width: 350px;
-}
-
-
-
 h3{
     color: white;
-}
-
-.btn-siguiente:hover,.btn-anterior:hover{
-    color: white !important;
-}
-
-.btn-siguiente{
-    margin-left: 30px !important;
-    margin-right: 20px;
-    width: 150px;
-    height: 150px;
-    background: #294658;
-    color: white!important;
 }
