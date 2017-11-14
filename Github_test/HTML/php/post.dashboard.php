@@ -53,7 +53,7 @@
                                 $dash->getListaSolicitudesPorCliente($id, 'DESC', $pag, $pagF);
                     echo    "</tbody>
                         </table>
-                        <div class='btn-paginas'><button class='btn-anterior btn'>Anterior</button><button class='btn-siguiente btn'>Siguiente</button></div>
+                        <div class='btn-paginas'><button class='btn-anterior btn' onclick=pagAnt($pag)>Anterior</button><button class='btn-siguiente btn' onclick=pagSig($pag)>Siguiente</button></div>
                     </section>";
             break;
 		
