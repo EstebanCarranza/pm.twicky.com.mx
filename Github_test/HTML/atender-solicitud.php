@@ -17,7 +17,7 @@
         include('header.php');
     ?>
    <div class="btn-paginas btn-paginas-cerrar">
-        <button class="btn" id="btn-close">Cerrar folio</button>   
+      <input id="razon-input" type="text" class="form-control input-sm response_input" placeholder="Razón de cierre de folio..." /><button class="btn" id="btn-close">Cerrar folio</button>   
     </div>
        <div class="panel-body msg_container_base panel-body-solicitud">
                     <div class="row msg_container base_sent">

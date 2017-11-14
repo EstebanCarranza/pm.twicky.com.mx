@@ -135,6 +135,11 @@ textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeh
     color: #810609;
     font-size: 14px;
 }
+#razon-input{
+    position: relative;
+    width: 431px;
+    margin-left: 12px;
+}
 .label-hide{
     display: none;
 }
@@ -149,6 +154,9 @@ textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeh
     background: red !important;
     border: none !important;
     color: white !important;
+}
+.btn-paginas .btn-paginas-cerrar{
+    width: 50% !important;
 }
 .btn-calificado{
     background: #517B30 !important;
@@ -166,7 +174,9 @@ textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeh
     height: 50px;
     font-weight: bolder;
     font-size: 20px;
-    margin-top: 8px;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 2px;
 }
 .btn-siguiente:hover,.btn-anterior:hover{
     color: white !important;
