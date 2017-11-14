@@ -221,7 +221,8 @@ class usuario
                                             'Reply-To: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
                                             'X-Mailer: PHP/' . phpversion();
                                 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-                                
+                                $headers .= 'MIME-Version: 1.0' . "\r\n";
+
                                 $exito=mail($destino, "Correo de confirmacion: pm.twicky.com.mx", $Contenido, $headers);
                                 if($exito)
                                     $respuesta = "OK";
@@ -328,6 +329,7 @@ class usuario
                                             'Reply-To: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
                                             'X-Mailer: PHP/' . phpversion();
                                 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+                                $headers .= 'MIME-Version: 1.0' . "\r\n";
 
                                 $exito=mail($destino, "Correo de confirmación: pm.twicky.com.mx", $Contenido, $headers);
                                 if($exito)
