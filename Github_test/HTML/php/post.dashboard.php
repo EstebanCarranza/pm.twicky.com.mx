@@ -50,7 +50,7 @@
                                 </tr>
                             </thead>
                             <tbody class='table-body'>";
-                                $dash->getListaSolicitudesPorCliente($id, 'DESC', $pag, $pagFin);
+                                $dash->getListaSolicitudesPorCliente($id, 'DESC', $pag, $pagF);
                     echo    "</tbody>
                         </table>
                         <div class='btn-paginas'><button class='btn-anterior btn'>Anterior</button><button class='btn-siguiente btn'>Siguiente</button></div>
