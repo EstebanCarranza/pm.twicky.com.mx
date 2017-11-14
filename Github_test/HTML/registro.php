@@ -10,6 +10,8 @@
     <link rel="icon" href="../Images/Logo.png">
     <script type="text/javascript" src="validationsEmail.js" ></script>
     <script type="text/javascript" src="validationsReg.js" ></script>
+    <script type="text/javascript" src="validationsCellphone.js" ></script>
+
 
     <title>Inicio de sesion</title>
 
