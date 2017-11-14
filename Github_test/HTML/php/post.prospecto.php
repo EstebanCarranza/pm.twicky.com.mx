@@ -26,17 +26,22 @@ $dayData =  substr($var,0,$cant-1);
  $horaInicio24  = date("H:i", strtotime($horaInicio));
  $horaFin24  = date("H:i", strtotime($horaFin));
  
- 
+ if($dayData != "")
+ {
+    if
+    (
+            ($correo != null) && ($dayData != null) && ($celular != null) && ($nombre != null) && ($apellidoPaterno != null) &&
+            ($comentarios != null) && ($horaInicio24 != null) && ($horaFin24 != null) && ($idProducto != null)
+    )
+    {
 
-if
-(
-	($correo != null) && ($dayData != null) && ($celular != null) && ($nombre != null) && ($apellidoPaterno != null) &&
-	($comentarios != null) && ($horaInicio24 != null) && ($horaFin24 != null) && ($idProducto != null)
-)
-{
-	
-	$prospecto = new usuario();
-	$prospecto->prospecto($correo,$dayData,$celular,$nombre,$apellidoPaterno,$comentarios, $horaInicio24, $horaFin24, $idProducto);
-}
+            $prospecto = new usuario();
+            $prospecto->prospecto($correo,$dayData,$celular,$nombre,$apellidoPaterno,$comentarios, $horaInicio24, $horaFin24, $idProducto);
+    }
 
+ }
+ else
+ {
+     echo ">:v no seas asi, elige un dia";
+ }
 ?>
