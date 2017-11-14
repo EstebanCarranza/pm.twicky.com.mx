@@ -84,7 +84,7 @@
 								<label id="validate"></label>
 				                        </div>
                                   <div class="form-group">
-				                        	<input type="tel" name="form-telephone" placeholder="Teléfono..." class="form-telephone form-control" id="inputCelular" required>
+				                        	<input type="tel" name="form-telephone" placeholder="Teléfono..." class="form-telephone form-control" id="inputCelular" onblur="validarcellphone();" required>
 					  			<label id="validatetel"></label>
 				                        </div>
                                   <div class="form-group">
