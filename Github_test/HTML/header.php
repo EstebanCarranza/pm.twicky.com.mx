@@ -21,11 +21,6 @@
                         <strong> Reporte atendidos </strong>
                     </button>
                 </li>
-                <li class='list-inline-item'> 
-                    <button type='button' class='btn btn-primary reporte-producto' onclick=ir_a('reporte-de-productos') >
-                        <strong> Reporte de productos </strong>
-                    </button>
-                </li>
                 <li class="list-inline-item"> 
                     <button type="button" class="btn btn-primary reporte-cliente-cliente" onclick="location='../HTML/reporte-clientes.html'">
                         <strong> Reporte de clientes </strong>

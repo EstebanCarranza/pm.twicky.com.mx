@@ -41,7 +41,7 @@ class dashboard
 		
 		while($res = mysql_fetch_array($result, MYSQL_ASSOC))	
 		{
-			$location = "location='../HTML/atender-solicitud.html'";
+			$location = "location='../HTML/atender-solicitud.php'";
 			echo "
 				<tr>
 					<td> $res[tiempoRegistro] </td>
