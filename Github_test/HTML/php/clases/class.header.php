@@ -39,11 +39,7 @@ class header
                 <strong> Clientes atendidos </strong>
             </button>
         </li>
-        <li class='list-inline-item'> 
-            <button type='button' class='btn btn-primary reporte-cliente-cliente' onclick=ir_a('reporte-clientes') >
-                <strong> Reporte de clientes </strong>
-            </button>
-        </li>
+        
         ";
 
     }

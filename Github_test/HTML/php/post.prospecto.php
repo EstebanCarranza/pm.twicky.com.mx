@@ -23,6 +23,7 @@ for($i = 0; $i < 7; $i = intVal($i, 10) + 1)
 $cant = strlen($var);
 $dayData =  substr($var,0,$cant-1);
 
+
  $horaInicio24  = date("H:i", strtotime($horaInicio));
  $horaFin24  = date("H:i", strtotime($horaFin));
  
@@ -40,8 +41,5 @@ $dayData =  substr($var,0,$cant-1);
     }
 
  }
- else
- {
-     echo ">:v no seas asi, elige un dia";
- }
+
 ?>

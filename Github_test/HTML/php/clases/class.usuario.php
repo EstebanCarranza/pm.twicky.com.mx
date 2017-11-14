@@ -88,11 +88,21 @@ class usuario
 			switch($res['result'])
 			{
 				case 'INSERTADO':
-					echo "<script> window.location='../login.php?mensaje=registro exitoso'</script>";
+                                        if(!isset($_SESSION['mensaje']))
+                                        {
+                                            session_start();
+                                        }
+                                        $_SESSION['mensaje'] = "Gracias por mandar tu solicitud :D, te invitamos a registrarte para disfrutar de grandes beneficios";
+					echo "<script> window.location='../correo.php?r=OK'</script>";
 				break;
 				
 				case 'NO INSERTADO': case 'NO ACTUALIZADO':
-					echo "<script>window.location='../login.php?mensaje=registro exitoso'</script>";
+                                        if(!isset($_SESSION['mensaje']))
+                                        {
+                                            session_start();
+                                        }
+                                        $_SESSION['mensaje'] = "Lo sentimos, sucedio un error, por favor intentalo de nuevo :(";
+					echo "<script>window.location='../correo.php?r=NOOK'</script>";
 				break;
 			}
 			
