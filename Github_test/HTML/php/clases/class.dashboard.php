@@ -52,9 +52,42 @@ class dashboard
 					<td> $res[fechaSeguimiento] </td>
 					<td> $res[fechaCalificacion] </td>
 					<td> 
-						<button type='button' class='btn btn-primary center-obj btn-sincalificar' onclick=$location> 
-							$res[estado]
-						</button> 
+                                            <form action='atender-solicitud.php' method='get'>
+                                                ";
+
+                                        switch($res['estado'])
+                                        {
+                                            case 'sin calificar':
+                                                   echo "
+                                                        <input name='folio' type='hidden' value='$res[idSeguimiento]'>
+                                                        <button type='submit' class='btn btn-primary center-obj btn-sincalificar'> 
+                                                            $res[estado]
+                                                        </button> 
+                                                    ";
+                                            break;
+                                            
+                                            case 'calificando':
+                                                 echo "
+                                                        <input name='folio' type='hidden' value='$res[idSeguimiento]'>
+                                                        <button type='submit' class='btn btn-primary center-obj btn-calificando'> 
+                                                            $res[estado]
+                                                        </button> 
+                                                        ";  
+                                            break;
+                                            case 'calificado':
+                                                 echo "
+                                                        <input name='folio' type='hidden' value='$res[idSeguimiento]'>
+                                                        <button type='submit' class='btn btn-primary center-obj btn-calificado'> 
+                                                            $res[estado]
+                                                        </button> 
+                                                        ";  
+                                            break;
+                                        }
+
+                                     
+                                                       
+                                             echo   " 
+                                            </form>
 					</td>
 				</tr>";
 

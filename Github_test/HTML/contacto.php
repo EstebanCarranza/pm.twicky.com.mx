@@ -27,6 +27,7 @@
         <script type="text/javascript" src="../JS/bootstrap-datetimepicker.min.js"></script>
         <script type="text/javascript" src="../JS/cursos.js"></script>
 	<script type="text/javascript" src="cargaprod.js" ></script>
+	<script type="text/javascript" src="validationsEmail.js" ></script>
     </head>
     <body>
        <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -78,7 +79,8 @@
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-email">Email</label>
-				                        	<input type="email" name="form-email" placeholder="Correo..." class="form-email form-control" id="form-email" required>
+				                        	<input type="email" name="form-email" placeholder="Correo..." class="form-email form-control" id="form-email" onblur="validaremail();" required>
+								<label id="validate"></label>
 				                        </div>
                                   <div class="form-group">
 				                        	<input type="tel" name="form-telephone" placeholder="Teléfono..." class="form-telephone form-control" id="form-telephone" required>

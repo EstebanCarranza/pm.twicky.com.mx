@@ -10,22 +10,13 @@
     <nav class='navbar navbar-inverse navbar-fixed-top'>
         <div class='container-fluid'>
             <div class='navbar-header'>
-                <a class='navbar-brand' href='../index.php'><img  class='logo' src='../Images/Logo.png' /></a>
+                <a class='navbar-brand' href='dashboard.php'><img  class='logo' src='../Images/Logo.png' /></a>
             </div>
             <ul class='list-inline'>
                 <li class='list-inline-item'>
                     <h3> ¡Bienvenido <?php echo $nombre ?>! </h3>
                 </li>
-                <li class='list-inline-item'> 
-                    <button type='button' class='btn btn-primary reporte-cliente' onclick=ir_a('reporte-clientes.php') >
-                        <strong> Reporte atendidos </strong>
-                    </button>
-                </li>
-                <li class="list-inline-item"> 
-                    <button type="button" class="btn btn-primary reporte-cliente-cliente" onclick="location='../HTML/reporte-clientes.html'">
-                        <strong> Reporte de clientes </strong>
-                    </button>
-                </li>
+                <?php $header->botonesExtra() ?>
                 <li class='list-inline-item'>
                     <form method='post'>
                     <button name='logout' type='submit' class='btn btn-primary logout' >

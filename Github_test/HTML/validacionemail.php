@@ -1,5 +1,5 @@
 <?php
-require_once 'php/clases/modelo.php';
+	require_once 'php/clases/modelo.php';
 
 	$email= $_POST['email'];
 
@@ -17,12 +17,11 @@ require_once 'php/clases/modelo.php';
 					echo "Email existente ingrese uno diferente";
 					break 1;
 				}//if
-				else
-				{
-					echo("Email valido");
-				}//else
 			}//while
- 	
+
+ 			if($res==0)
+			echo("Email valido");
+
 	} else {
 	  echo("Email invalido");
 	}

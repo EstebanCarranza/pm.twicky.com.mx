@@ -26,6 +26,40 @@ class header
         return $nombre;
     }
 
+    public function botonesAgente()
+    {
+        echo "<li class='list-inline-item'> 
+            <button type='button' class='btn btn-primary reporte-cliente' onclick=ir_a('reporte-clientes-atendidos') >
+                <strong> Reporte atendidos </strong>
+            </button>
+        </li>
+        <li class='list-inline-item'> 
+            <button type='button' class='btn btn-primary reporte-cliente-cliente' onclick=ir_a('reporte-clientes') >
+                <strong> Reporte de clientes </strong>
+            </button>
+        </li>";
+
+    }
+    public function botonesCliente()
+    {
+        echo "<li class='list-inline-item'> 
+            <button type='button' class='btn btn-primary reporte-cliente' onclick=ir_a('contacto') >
+                <strong> Crear nueva solicitud </strong>
+            </button>
+        </li>";
+    }
+
+    public function botonesExtra()
+    {
+        if($_SESSION['tipoUsuario'] == "Agente")
+        {
+            $this->botonesAgente();
+        }
+        if($_SESSION['tipoUsuario'] == "Cliente")
+        {
+            $this->botonesCliente();
+        }
+    }
    
 }
 
