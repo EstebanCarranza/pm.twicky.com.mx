@@ -129,10 +129,94 @@ class usuario
                                 $destino = $res ['correoElectronico'];
                                 
                                 $Contenido = 
-                                        "Gracias por iniciar el proceso de registro en pm.twicky.com.mx, ya estas a un paso de ser parte del grupo :D\n 
-                                        Has click en el siguiente enlace para continuar: \n
-                                        http://pm.twicky.com.mx/?token=$token
-                                        ";
+                                '
+                                <!DOCTYPE html>
+                                <html xmlns="http://www.w3.org/1999/xhtml">
+                                <head>
+                                    <meta name="viewport" content="width=device-width">
+                                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+                                    <style type="text/css">
+                                        body {
+                                            font-family: "Roboto", sans-serif;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            color: #454545;
+                                            text-align: center;
+                                            background-image: url("http://pm.twicky.com.mx/Images/O7MF5N0.jpg");
+                                            background-attachment: fixed;
+                                            background-repeat: no-repeat;
+                                            background-size: cover;
+                                        }
+                                        .logo{
+                                            height: 55px;
+                                            width: 55px;
+                                        }
+                                        .navbar-header{
+                                            margin-left: 16px;
+                                            margin-top: 16px;
+                                            width: 100%;
+                                            text-align: left;
+                                        }
+
+                                        .cuerpo{
+                                            width: 100%;
+                                        }
+
+                                        .tabla{
+                                            width: 100%;
+                                            border: 1px solid black;
+                                            background-color: #eee;
+                                            border-radius: 10px;
+                                            padding: 5px;
+                                        }
+
+                                        td {
+                                            padding: 10px;
+                                        }
+
+                                        .tabla tr:first-child td {
+                                            border-bottom: 1px solid #ddd;
+                                        }
+
+                                        .twicky{
+                                            color: white;
+                                            text-align: center;
+                                        }
+
+                                    </style>
+                                </head>
+                                <body>
+                                    <div class="navbar-header">
+                                        <a href="http://pm.twicky.com.mx/"><img  class="logo" src="http://pm.twicky.com.mx/Images/Logo.png" /></a>
+                                    </div>
+
+                                    <div class="cuerpo">
+                                        <table class="tabla">
+                                        <tr>
+                                            <td>Gracias por iniciar el proceso de registro en <a href="pm.twicky.com.mx">Twicky</a>, ya estas a un paso de ser parte del grupo :D</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Has click en el siguiente enlace para continuar:</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="http://pm.twicky.com.mx/?token=$token">
+                                                    http://pm.twicky.com.mx/?token=$token
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        </table>
+                                    </div>
+                                        
+                                    <div class="twicky">
+                                        <p> 2017 | TWICKY </p>
+                                    </div>
+                                    
+                                </body>
+                                </html>
+                                ';
+
                                 $headers = 'From: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
                                             'Reply-To: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
                                             'X-Mailer: PHP/' . phpversion();
@@ -150,10 +234,94 @@ class usuario
                                 $destino = $res ['correoElectronico'];
                                 
                                 $Contenido = 
-                                        "Gracias por iniciar el proceso de registro en pm.twicky.com.mx, ya estás a un paso de ser parte del grupo :D\n 
-                                        Has click en el siguiente enlace para continuar: \n
-                                        http://pm.twicky.com.mx/?token=$token
-                                        ";
+                                '
+                                <!DOCTYPE html>
+                                <html xmlns="http://www.w3.org/1999/xhtml">
+                                <head>
+                                    <meta name="viewport" content="width=device-width">
+                                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+                                    <style type="text/css">
+                                        body {
+                                            font-family: "Roboto", sans-serif;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            color: #454545;
+                                            text-align: center;
+                                            background-image: url("http://pm.twicky.com.mx/Images/O7MF5N0.jpg");
+                                            background-attachment: fixed;
+                                            background-repeat: no-repeat;
+                                            background-size: cover;
+                                        }
+                                        .logo{
+                                            height: 55px;
+                                            width: 55px;
+                                        }
+                                        .navbar-header{
+                                            margin-left: 16px;
+                                            margin-top: 16px;
+                                            width: 100%;
+                                            text-align: left;
+                                        }
+
+                                        .cuerpo{
+                                            width: 100%;
+                                        }
+
+                                        .tabla{
+                                            width: 100%;
+                                            border: 1px solid black;
+                                            background-color: #eee;
+                                            border-radius: 10px;
+                                            padding: 5px;
+                                        }
+
+                                        td {
+                                            padding: 10px;
+                                        }
+
+                                        .tabla tr:first-child td {
+                                            border-bottom: 1px solid #ddd;
+                                        }
+
+                                        .twicky{
+                                            color: white;
+                                            text-align: center;
+                                        }
+
+                                    </style>
+                                </head>
+                                <body>
+                                    <div class="navbar-header">
+                                        <a href="http://pm.twicky.com.mx/"><img  class="logo" src="http://pm.twicky.com.mx/Images/Logo.png" /></a>
+                                    </div>
+
+                                    <div class="cuerpo">
+                                        <table class="tabla">
+                                        <tr>
+                                            <td>Gracias por iniciar el proceso de registro en <a href="pm.twicky.com.mx">Twicky</a>, ya estas a un paso de ser parte del grupo :D</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Has click en el siguiente enlace para continuar:</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="http://pm.twicky.com.mx/?token=$token">
+                                                    http://pm.twicky.com.mx/?token=$token
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        </table>
+                                    </div>
+                                        
+                                    <div class="twicky">
+                                        <p> 2017 | TWICKY </p>
+                                    </div>
+                                    
+                                </body>
+                                </html>
+                                ';
+                                
                                 $headers = 'From: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
                                             'Reply-To: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
                                             'X-Mailer: PHP/' . phpversion();
