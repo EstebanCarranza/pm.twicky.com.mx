@@ -7,7 +7,8 @@ require_once 'clases/modelo.php';
 		
 		while($res = mysql_fetch_array($result, MYSQL_ASSOC))	
 		{
-			echo "<option>$res['descripcion']</option>";	
+			$opcion = $res['descripcion'];
+			echo "<option>$opcion</option>";	
 		}
 
 		$datos->cerrar_conexion(true, $result);
