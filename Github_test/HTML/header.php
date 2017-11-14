@@ -10,7 +10,7 @@
     <nav class='navbar navbar-inverse navbar-fixed-top'>
         <div class='container-fluid'>
             <div class='navbar-header'>
-                <a class='navbar-brand' href='../index.php'><img  class='logo' src='../Images/Logo.png' /></a>
+                <a class='navbar-brand' href='dashboard.php'><img  class='logo' src='../Images/Logo.png' /></a>
             </div>
             <ul class='list-inline'>
                 <li class='list-inline-item'>
