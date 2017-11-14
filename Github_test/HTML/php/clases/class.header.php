@@ -28,16 +28,23 @@ class header
 
     public function botonesAgente()
     {
-        echo "<li class='list-inline-item'> 
+        echo "
+        <li class='list-inline-item'> 
+            <button type='button' class='btn btn-primary reporte-cliente-cliente' onclick=ir_a('reporte-clientes-sin-atender') >
+                <strong> Clientes sin atender </strong>
+            </button>
+        </li>
+        <li class='list-inline-item'> 
             <button type='button' class='btn btn-primary reporte-cliente' onclick=ir_a('reporte-clientes-atendidos') >
-                <strong> Reporte atendidos </strong>
+                <strong> Clientes atendidos </strong>
             </button>
         </li>
         <li class='list-inline-item'> 
             <button type='button' class='btn btn-primary reporte-cliente-cliente' onclick=ir_a('reporte-clientes') >
                 <strong> Reporte de clientes </strong>
             </button>
-        </li>";
+        </li>
+        ";
 
     }
     public function botonesCliente()

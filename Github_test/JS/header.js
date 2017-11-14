@@ -13,6 +13,7 @@ function ir_a(pagina)
         case 'reporte-clientes': window.location = 'reporte-clientes.php';    break;
         case 'reporte-clientes-atendidos': window.location = 'reporte-clientes-atendidos.php';    break;
         case 'contacto': window.location = 'contacto.php';    break;
+        case 'reporte-clientes-sin-atender': window.location = 'reporte-clientes-sin-atender.php';    break;
         
         default: window.location = '../index.php';      break;
     }

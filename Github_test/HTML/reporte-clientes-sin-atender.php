@@ -13,14 +13,16 @@
   <thead class="thead-inverse">
     <tr>
       <th>Nombre</th>
-      <th>Fecha de Atendido</th>
+      <th>Fecha de captura</th>
       <th>Duda</th>
-      <th>Comentario</th>
+      <th>Mi respuesta</th>
+      
       <th>Producto</th>
+      <th>Atender</th>
     </tr>
   </thead>
   <tbody>
-      <?php require_once 'php/get.reporte-clientes-atendidos.php'; ?>
+      <?php require_once 'php/get.reporte-clientes-sin-atender.php'; ?>
     
   </tbody>
 </table>
