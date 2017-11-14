@@ -81,3 +81,46 @@ height: 596px;
     padding-left: 5%;
     padding-right: 5%;
 }
+.slc-objects
+{
+   
+}
+.slc-input-folio{
+    position:absolute;
+    width:calc(70% - 31px);
+    max-width: calc(70% - 31px);
+    min-width:calc(70% - 31px);
+    box-sizing: border-box;
+    left:10px;
+    float:left;
+    
+}
+.slc-submit-folio
+{
+    
+    background: darkred !important;
+    border: none !important;
+    color: white !important;
+    width:30%;
+    max-width:30%;
+    min-width: 30%;
+    margin:auto !important;
+    right:10px;
+    position:absolute;
+    box-sizing: border-box;
+}
+.slc-div-content
+{
+    width:500px;
+    max-width:500px;
+    min-width:500px;
+    
+    height:60px;
+    overflow:hidden;
+    clear:both;
+    
+    padding-rigth:5%;
+    box-sizing: border-box;
+    position:relative;
+    
+}

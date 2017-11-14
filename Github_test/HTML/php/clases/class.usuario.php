@@ -209,7 +209,8 @@ class usuario
 		
 		$datos->cerrar_conexion(true, $result);
         }
-                
+            
+        
 };
 
 ?>
