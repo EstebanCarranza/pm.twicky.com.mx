@@ -217,11 +217,11 @@ class usuario
                                 </html>
                                 ';
 
-                                $headers = 'From: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
+                                $headers  = 'MIME-Version: 1.0' . "\r\n";
+								$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+                                $headers .= 'From: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
                                             'Reply-To: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
                                             'X-Mailer: PHP/' . phpversion();
-                                $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-                                $headers .= 'MIME-Version: 1.0' . "\r\n";
 
                                 $exito=mail($destino, "Correo de confirmacion: pm.twicky.com.mx", $Contenido, $headers);
                                 if($exito)
@@ -324,12 +324,11 @@ class usuario
                                 </body>
                                 </html>
                                 ';
-
-                                $headers = 'From: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
+                                $headers  = 'MIME-Version: 1.0' . "\r\n";
+								$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+                                $headers .= 'From: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
                                             'Reply-To: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
                                             'X-Mailer: PHP/' . phpversion();
-                                $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-                                $headers .= 'MIME-Version: 1.0' . "\r\n";
 
                                 $exito=mail($destino, "Correo de confirmación: pm.twicky.com.mx", $Contenido, $headers);
                                 if($exito)
