@@ -80,6 +80,7 @@
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-email">Email</label>
 				                        	<input type="email" name="form-email" placeholder="Correo..." class="form-email form-control" id="form-email" onblur="validaremail();" required>
+								<label id="validate"></label>
 				                        </div>
                                   <div class="form-group">
 				                        	<input type="tel" name="form-telephone" placeholder="Teléfono..." class="form-telephone form-control" id="form-telephone" required>
