@@ -135,8 +135,11 @@ class usuario
                     switch($res['result'])
                     {
                         case 'el token ya esta activo':
-                            $mensaje = "El correo $correo ya ha sido validado anteriormente :), inicia sesión para continuar";
+                            session_start();
                             
+                            $mensaje = "El correo $correo ya ha sido validado anteriormente :), inicia sesión para continuar";
+                            $_SESSION['mensaje'] = $mensaje;
+                            $_SESSION['correoLog'] = $correo;
                             echo "<script> window.location='../login.php?r=OK'; </script>";
                         break;
                             case 'el token ya existe':
