@@ -31,6 +31,7 @@
                         <div class="form-top">
                             <div class="form-top-left">
                                 <h1 id="login-title"><strong>¡Bienvenido a twicky!</strong></h1>
+                                <h3 id="login-title"><strong>Introduce tu correo para continuar con el proceso de registro</strong></h3>
                                 <h4 id='login-title'><strong><?php echo $_SESSION['mensaje']; ?></strong></h4>
                             </div>
                         </div>

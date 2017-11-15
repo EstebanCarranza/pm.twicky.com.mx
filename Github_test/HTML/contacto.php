@@ -30,6 +30,7 @@
 	<script type="text/javascript" src="validationsEmail.js" ></script>
 	<script type="text/javascript" src="validationsCellphone.js" ></script>
     <script type="text/javascript" src="validationsDays.js"></script>
+    <?php require_once 'php/post.contacto.php'; ?>
     </head>
     <body>
        <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -73,19 +74,19 @@
 				                    <form role="form" action="php/post.prospecto.php" method="post" class="registration-form">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-first-name">First name</label>
-				                        	<input type="text" name="form-first-name" placeholder="Nombre..." class="form-first-name form-control" id="form-first-name" required>
+				                        	<input type="text" name="form-first-name" placeholder="Nombre..." class="form-first-name form-control" id="form-first-name" value='<?php $nombre ?>' required>
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-last-name">Last name</label>
-				                        	<input type="text" name="form-last-name" placeholder="Apellido Paterno..." class="form-last-name form-control" id="form-last-name" required>
+				                        	<input type="text" name="form-last-name" placeholder="Apellido Paterno..." class="form-last-name form-control" id="form-last-name" value='<?php $apellidoPaterno ?>' required>
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-email">Email</label>
-				                        	<input type="email" name="form-email" placeholder="Correo..." class="form-email form-control" id="form-email" onblur="validaremail();" required>
+				                        	<input type="email" name="form-email" placeholder="Correo..." class="form-email form-control" id="form-email" onblur="validaremail();" value='<?php $correoElectronico ?>' required>
 								<label id="validate"></label>
 				                        </div>
                                   <div class="form-group">
-				                        	<input type="tel" name="form-telephone" placeholder="Teléfono..." class="form-telephone form-control" id="inputCelular" onblur="validarcellphone();" required>
+				                        	<input type="tel" name="form-telephone" placeholder="Teléfono..." class="form-telephone form-control" id="inputCelular" onblur="validarcellphone();"  value='<?php $celular ?>'required>
 					  			<label id="validatetel"></label>
 				                        </div>
                                   <div class="form-group">

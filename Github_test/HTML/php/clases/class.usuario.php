@@ -26,6 +26,10 @@ class usuario
 				$_SESSION['idUsuario'] = $res['idUsuario'];
 				$_SESSION['tipoUsuario'] = $res['tipoUsuario'];
                                 $_SESSION['nombreUsuario'] = $res['nombreUsuario'];
+                                $_SESSION['nombre'] = $res['nombre'];
+                                $_SESSION['apellidoPaterno'] = $res['apellidoPaterno'];
+                                $_SESSION['celular'] = $res['celular'];
+                                $_SESSION['correoElectronico'] = $res['correoElectronico'];
                                 header('Location: ../dashboard.php');
 				//echo "<script>window.location = '../header.php';</script>";
 			}
@@ -131,7 +135,9 @@ class usuario
                     switch($res['result'])
                     {
                         case 'el token ya esta activo':
-                            $mensaje = "El correo $correo ya ha sido validado anteriormente :)";
+                            $mensaje = "El correo $correo ya ha sido validado anteriormente :), inicia sesión para continuar";
+                            
+                            echo "<script> window.location='../login.php?r=OK'; </script>";
                         break;
                             case 'el token ya existe':
                                 $mensaje = "El correo aun no ha sido validado, te reenviamos un mensaje de confimación al siguiente correo: $correo para que puedas continuar con tu registro :)";

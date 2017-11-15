@@ -19,6 +19,7 @@
       <link rel="stylesheet" href="../CSS/form-elements.css">
        <link rel="stylesheet" href="../CSS/style.css">
          <link rel="stylesheet" href="../CSS/login-style.css">
+         <?php require_once 'php/get.login.php'; ?>
   </head>
 
   <body>
@@ -32,6 +33,7 @@
                         		<div class="form-top">
 	                        		<div class="form-top-left">
 	                        			<h1 id="login-title"><strong>¡Bienvenido a twicky!</strong></h1>
+                                                        <h4 id='login-title'><strong><?php echo $_SESSION['mensaje']; ?></strong></h4>
 	                        		</div>
 	                            </div>
 	                            <div class="form-bottom">
