@@ -35,7 +35,10 @@ class usuario
 			}
 			else
 			{
-				header('Location: ../login.php');
+                            session_start();
+                            $_SESSION['mensaje'] = "Lo sentimos :(, tu correo o contraseña son equivocados, intenta nuevamente";
+                            $_SESSION['correoLog'] = $correo;
+				header('Location: ../login.php?r=OK');
 			}
 			
 		}
