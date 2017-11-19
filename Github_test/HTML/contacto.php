@@ -90,7 +90,7 @@
 					  			<label id="validatetel"></label>
 				                        </div>
                                   <div class="form-group">
-				                        	<select name='form-producto' id="products-combo" onclick="productos();" class="form-control">
+				                        	<select name='form-producto' id="products-combo" onfocus="productos();" class="form-control">
                                   <option value='1'>Selecciona un curso...</option>
                                   </select>
 				                        </div>
