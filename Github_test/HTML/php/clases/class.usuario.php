@@ -130,6 +130,7 @@ class usuario
             $mensaje = "";
             $respuesta = "";
             $msgTitleCorreo = "";
+            $msgHeaderCorreo = "Muchas gracias :D";
             $datos = new BaseDatos();
             $datos->abrir_conexion();
             $result = $datos->dbquery("call sp_token('$correo');");
@@ -146,6 +147,7 @@ class usuario
                             $_SESSION['msg-title-correo'] = $msgTitleCorreo;
                             $_SESSION['msg-body-correo'] = $correo;
                             $_SESSION['correoLog'] = $correo;
+                            
                             echo "<script> window.location='../login.php?r=OK'; </script>";
                         break;
                             case 'el token ya existe':
@@ -364,6 +366,7 @@ class usuario
             
            
                 $_SESSION['mensaje'] = $mensaje;
+                $_SESSION['msg-header-correo'] = $msgHeaderCorreo;
                 $_SESSION['msg-title-correo'] = $msgTitleCorreo;
                 $_SESSION['msg-body-correo'] = "$correo";
                 echo "<script>window.location='../correo.php?r=$respuesta';</script>";

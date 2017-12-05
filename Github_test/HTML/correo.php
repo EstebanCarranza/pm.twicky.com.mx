@@ -10,14 +10,17 @@
         <title>Correo de verificación</title>
 
         <!-- Bootstrap core CSS -->
-        <!--<link href="../CSS/bootstrap.min.css" rel="stylesheet">-->
+        <link href="../CSS/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Custom styles for this template -->
+        <!--- Custom styles for this template -->
 
-        <!--<link rel="stylesheet" href="../CSS/main-style.css">
+        <link rel="stylesheet" href="../CSS/main-style.css">
         <link rel="stylesheet" href="../CSS/form-elements.css">
-       <link rel="stylesheet" href="../CSS/style.css">-->
-       <?php require_once 'php/post.token.php'; ?>
+       <link rel="stylesheet" href="../CSS/style.css">
+       <?php 
+            require_once 'php/post.token.php'; 
+            $data = new DataCorreo();
+       ?>
     </head>
 
     <body>
@@ -30,10 +33,9 @@
                     <div class="form-box">
                         <div class="form-top">
                             <div class="form-top-left">
-                                <h1 id="login-title"><strong>¡Bienvenido a twicky!</strong></h1>
-                                <h4 id='login-title-01'><strong><?php echo $_SESSION['mensaje']; ?></strong></h4>
-                                <h3 id="login-title-02"><strong><?php echo $_SESSION['msg-title-correo']; ?></strong></h3>
-                                <h3 id="login-title-03"><strong><?php echo $_SESSION['msg-body-correo']; ?></strong></strong></h3>
+                                <?php $data->get_titles()?>
+                                
+                                
                             </div>
                         </div>
                         <div class="form-bottom">
@@ -43,7 +45,9 @@
                                 <div class="form-group">
                                     <label class="sr-only" for="form-email">Email</label>
                                     
-                                    <input type="email" name="form-email" placeholder="Correo..." class="form-email form-control" id="form-email" required>
+                                    <?php 
+                                        $data->get_input_()  
+                                    ?>
                                 </div>
                                 <button class="btn" type="submit">Enviar</button>
                             </form>

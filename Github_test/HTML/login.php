@@ -42,7 +42,10 @@
              <div class="form-group">
                  <label class="label-incorrect label-hide"><strong>  *La contraseña/usuario no son correctos</strong></label>
 				                        	<label class="sr-only" for="form-email">Email</label>
-                                                                <input type="email" name="form-email" placeholder="Correo..." class="form-email form-control" id="form-email" value='<?php $_SESSION['correoLog']; ?>' required>
+                                                                <?php 
+                                                                    $MSG_Correo = $_SESSION['msg-body-correo'];
+                                                                    echo "<input type='email' name='form-email' placeholder='Correo...' class='form-email form-control' id='form-email' value='$MSG_Correo' required>"; 
+                                                                ?>
 				                        </div>
             <div class="form-group">
         <label for="inputPassword" class="sr-only">Contraseña</label>
