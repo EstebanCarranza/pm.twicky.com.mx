@@ -67,3 +67,8 @@ class DataCorreo
         echo "<input type='email' name='form-email' value='$correoX' placeholder='Correo...' class='form-email form-control' id='form-email' required>";
     }
 };
+
+if(isset($_SESSION['correoElectronico']))
+{
+   echo "<script> window.location = 'dashboard.php'; </script>"; 
+}
