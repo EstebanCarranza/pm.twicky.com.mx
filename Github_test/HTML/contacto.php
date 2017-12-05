@@ -66,7 +66,7 @@
                                 <div class="form-top">
                                     <div class="form-top-left">
                                         <h3><strong>¿Necesitas información?</strong></h3>
-                                        <p>Estamos a tus ordenes,llena el siguiente formulario y te atenderemos en la brevedad posible:</p>
+                                        <p>Estamos a tus ordenes, llena el siguiente formulario y te atenderemos en la brevedad posible:</p>
                                     </div>
                                 </div>
                                 <div class="form-bottom">
