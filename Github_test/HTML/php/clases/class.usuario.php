@@ -150,19 +150,91 @@ class usuario
                                 $token = $res['token'];
                                 $destino = $res ['correoElectronico'];
                                 
+                                /*
                                 $Contenido = 
                                 "Gracias por iniciar el proceso de registro en pm.twicky.com.mx, ya estás a un paso de ser parte del grupo :D\n 
                                 Has click en el siguiente enlace para continuar: \n
                                 http://pm.twicky.com.mx/?token=$token
                                 ";
+                                */
+
+                                $Contenido = '
+								<html>
+								<head>
+									<title>Bienvenido</title>
+								</head>';
+
+								$Contenido .= '
+								<body style="font-family: Roboto, sans-serif;
+										    font-size: 16px;
+										    font-weight: 300;
+										    color: #454545;
+										    text-align: center;
+										    background-image: url(';
+										    
+								$Contenido .= "'http://pm.twicky.com.mx/Images/O7MF5N0.jpg'";
+
+								$Contenido .= ');
+										    background-attachment: fixed;
+										    background-repeat: no-repeat;
+										    background-size: cover;">
+
+									<div style="margin-left: 16px;
+											margin-top: 16px;
+											width: 100%;
+											text-align: left;">
+										<a href="http://pm.twicky.com.mx/"><img  style="height: 55px;
+										    width: 55px;" src="http://pm.twicky.com.mx/Images/Logo.png" /></a>
+									</div>
+
+									<div style="width: 100%;">
+										<table style="width: 100%;
+											text-align: center;
+											border: 1px solid black;
+											background-color: #eee;
+											border-radius: 10px;
+											padding: 5px;">
+
+										<tr>
+											<td style="padding: 10px; border-bottom: 1px solid #ddd;">Gracias por iniciar el proceso de registro en <a href="pm.twicky.com.mx">Twicky</a>, ya estas a un paso de ser parte del grupo :D</td>
+										</tr>
+										<tr>
+											<td style="padding: 10px;">Has click en el siguiente enlace para continuar:</td>
+										</tr>
+										<tr>
+											<td style="padding: 10px;">
+												<a href="http://pm.twicky.com.mx/?token=$token">
+													http://pm.twicky.com.mx/?token=$token
+												</a>
+											</td>
+										</tr>
+										</table>
+									</div>
+										
+									<div style="color: white;
+										    text-align: center;">
+										<p> 2017 | TWICKY </p>
+									</div>
+	
+								</body>
+								</html>
+								';
 
                                 //$headers  = 'MIME-Version: 1.0' . "\r\n";
 								//$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-                                $headers = 'From: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
+                                /* $headers = 'From: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
                                             'Reply-To: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
                                             'X-Mailer: PHP/' . phpversion();
+                                */
 
-                                $exito=mail($destino, "Correo de confirmacion: pm.twicky.com.mx", $Contenido, $headers);
+                                $headers[] = 'MIME-Version: 1.0';
+                                $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
+                                $headers[] = 'From: soporte.tecnico@pm.twicky.com.mx';
+                                $headers[] = 'Reply-To: soporte.tecnico@pm.twicky.com.mx';
+                                $headers[] = 'X-Mailer: PHP/' . phpversion();
+
+                                $exito=mail($destino, "Correo de confirmacion: pm.twicky.com.mx", $Contenido, implode("\r\n", $headers));
                                 if($exito)
                                     $respuesta = "OK";
                                 else 
@@ -181,7 +253,7 @@ class usuario
                                 http://pm.twicky.com.mx/?token=$token
                                 ";
                                 */
-
+                                /* 
                                 $Contenido .= '
                                 <html>
 								<head>
@@ -191,6 +263,69 @@ class usuario
 									<div>
 										<a href="http://pm.twicky.com.mx/"><img src="http://pm.twicky.com.mx/Images/Logo.png" /></a>
 									</div>
+								</body>
+								</html>
+								';
+								*/
+
+								$Contenido = '
+								<html>
+								<head>
+									<title>Bienvenido</title>
+								</head>';
+
+								$Contenido .= '
+								<body style="font-family: Roboto, sans-serif;
+										    font-size: 16px;
+										    font-weight: 300;
+										    color: #454545;
+										    text-align: center;
+										    background-image: url(';
+
+								$Contenido .= "'http://pm.twicky.com.mx/Images/O7MF5N0.jpg'";
+
+								$Contenido .= ');
+										    background-attachment: fixed;
+										    background-repeat: no-repeat;
+										    background-size: cover;">
+
+									<div style="margin-left: 16px;
+											margin-top: 16px;
+											width: 100%;
+											text-align: left;">
+										<a href="http://pm.twicky.com.mx/"><img  style="height: 55px;
+										    width: 55px;" src="http://pm.twicky.com.mx/Images/Logo.png" /></a>
+									</div>
+
+									<div style="width: 100%;">
+										<table style="width: 100%;
+											text-align: center;
+											border: 1px solid black;
+											background-color: #eee;
+											border-radius: 10px;
+											padding: 5px;">
+
+										<tr>
+											<td style="padding: 10px; border-bottom: 1px solid #ddd;">Gracias por iniciar el proceso de registro en <a href="pm.twicky.com.mx">Twicky</a>, ya estas a un paso de ser parte del grupo :D</td>
+										</tr>
+										<tr>
+											<td style="padding: 10px;">Has click en el siguiente enlace para continuar:</td>
+										</tr>
+										<tr>
+											<td style="padding: 10px;">
+												<a href="http://pm.twicky.com.mx/?token=$token">
+													http://pm.twicky.com.mx/?token=$token
+												</a>
+											</td>
+										</tr>
+										</table>
+									</div>
+										
+									<div style="color: white;
+										    text-align: center;">
+										<p> 2017 | TWICKY </p>
+									</div>
+	
 								</body>
 								</html>
 								';
