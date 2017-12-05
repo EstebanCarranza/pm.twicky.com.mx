@@ -15,7 +15,12 @@ else
     $correo = $_POST['form-email'];
 }
 
-if(!isset($_SESSION['mensaje']))
+if
+(
+    !isset($_SESSION['mensaje']) || 
+    !isset($_SESSION['msg-title-correo']) || 
+    !isset($_SESSION['msg-body-correo'])
+)
 {
     session_start();
     $mensaje = "";
@@ -25,9 +30,12 @@ else
     $mensaje = $_SESSION['mensaje'];
     //$mensaje = "<h4 id='login-title'><strong>$mensaje</strong></h4>";
 }
+
 if(!isset($_GET['r']))
 {
     $_SESSION['mensaje'] = "";
+    $_SESSION['msg-title-correo'] = "Introduce tu correo para continuar con el proceso de registro";
+    $_SESSION['msg-body-correo'] = "";
 }
 
 if($correo != null)

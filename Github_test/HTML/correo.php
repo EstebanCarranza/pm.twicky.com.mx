@@ -10,13 +10,13 @@
         <title>Correo de verificación</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+        <!--<link href="../CSS/bootstrap.min.css" rel="stylesheet">-->
 
         <!-- Custom styles for this template -->
 
-        <link rel="stylesheet" href="../CSS/main-style.css">
+        <!--<link rel="stylesheet" href="../CSS/main-style.css">
         <link rel="stylesheet" href="../CSS/form-elements.css">
-       <link rel="stylesheet" href="../CSS/style.css">
+       <link rel="stylesheet" href="../CSS/style.css">-->
        <?php require_once 'php/post.token.php'; ?>
     </head>
 
@@ -31,8 +31,9 @@
                         <div class="form-top">
                             <div class="form-top-left">
                                 <h1 id="login-title"><strong>¡Bienvenido a twicky!</strong></h1>
-                                <h3 id="login-title"><strong>Introduce tu correo para continuar con el proceso de registro</strong></h3>
-                                <h4 id='login-title'><strong><?php echo $_SESSION['mensaje']; ?></strong></h4>
+                                <h4 id='login-title-01'><strong><?php echo $_SESSION['mensaje']; ?></strong></h4>
+                                <h3 id="login-title-02"><strong><?php echo $_SESSION['msg-title-correo']; ?></strong></h3>
+                                <h3 id="login-title-03"><strong><?php echo $_SESSION['msg-body-correo']; ?></strong></strong></h3>
                             </div>
                         </div>
                         <div class="form-bottom">
@@ -41,6 +42,7 @@
                                 
                                 <div class="form-group">
                                     <label class="sr-only" for="form-email">Email</label>
+                                    
                                     <input type="email" name="form-email" placeholder="Correo..." class="form-email form-control" id="form-email" required>
                                 </div>
                                 <button class="btn" type="submit">Enviar</button>

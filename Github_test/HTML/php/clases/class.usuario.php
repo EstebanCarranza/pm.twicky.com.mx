@@ -129,6 +129,7 @@ class usuario
         {
             $mensaje = "";
             $respuesta = "";
+            $msgTitleCorreo = "";
             $datos = new BaseDatos();
             $datos->abrir_conexion();
             $result = $datos->dbquery("call sp_token('$correo');");
@@ -142,11 +143,14 @@ class usuario
                             
                             $mensaje = "El correo $correo ya ha sido validado anteriormente :), inicia sesión para continuar";
                             $_SESSION['mensaje'] = $mensaje;
+                            $_SESSION['msg-title-correo'] = $msgTitleCorreo;
+                            $_SESSION['msg-body-correo'] = $correo;
                             $_SESSION['correoLog'] = $correo;
                             echo "<script> window.location='../login.php?r=OK'; </script>";
                         break;
                             case 'el token ya existe':
                                 $mensaje = "El correo aun no ha sido validado, te reenviamos un mensaje de confimación al siguiente correo: $correo para que puedas continuar con tu registro :)";
+                                $msgTitleCorreo = "¿Aun no te llega el mensaje?, puedes reenviarlo desde aqui";
                                 $token = $res['token'];
                                 $destino = $res ['correoElectronico'];
                                 
@@ -243,7 +247,7 @@ class usuario
 
                             case 'correcto token insertado': 
                                 $mensaje = "Gracias por iniciar el proceso de registro :), por favor revisa tu correo ($correo) para continuar con el registro";
-                                
+                                $msgTitleCorreo = "¿Aun no te llega el mensaje?, puedes reenviarlo desde aqui";
                                 $token = $res['token'];
                                 $destino = $res ['correoElectronico'];
                                 
@@ -360,6 +364,8 @@ class usuario
             
            
                 $_SESSION['mensaje'] = $mensaje;
+                $_SESSION['msg-title-correo'] = $msgTitleCorreo;
+                $_SESSION['msg-body-correo'] = "$correo";
                 echo "<script>window.location='../correo.php?r=$respuesta';</script>";
            
         }
