@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword" class="sr-only">Contraseña</label>
-                                    <input type="password" id="inputPassword-02" class="form-control" placeholder="Repetir Contraseña..." onblur="equalpassword();" required name='contrasenia-02'>
+                                    <input type="password" id="inputPassword-02" class="form-control" placeholder="Repetir Contraseña..." required name='contrasenia-02'>
                                     <label id="validatepass"></label>
                                     <label id='validar'></label>
                                 </div>

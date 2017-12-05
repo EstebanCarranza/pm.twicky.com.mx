@@ -10,8 +10,13 @@ if(isset($_POST['apellidoPaterno']))	$apellidoPaterno = $_POST['apellidoPaterno'
 
 if($correo != null || $contraseña != null || $celular != null || $nombre != null || $apellidoPaterno != null)
 {
-	$registro = new usuario();
-	$registro->registro($correo, $contrasenia, $celular, $nombre, $apellidoPaterno);	
+    if(!isset($_SESSION['registro']))
+    {
+        session_start();
+    }
+    $_SESSION['registro'] = new usuario();
+    $_SESSION['registro']->registro($correo, $contrasenia, $celular, $nombre, $apellidoPaterno);	
+        
 }
 
 

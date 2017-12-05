@@ -57,7 +57,13 @@ class usuario
 			switch($res['result'])
 			{
 				case 'INSERTADO': case 'ACTUALIZADO':
-					echo "<script> window.location='../login.php?mensaje=registro exitoso'</script>";
+                                {
+                                    session_start();
+                                    $_SESSION['form-email'] = $correo;
+                                    $_SESSION['password'] = $contrasenia;
+                                    header("Location: post.login.php");
+                                 
+                                }
 				break;
 				
 				case 'El alias ya existe':
@@ -73,7 +79,13 @@ class usuario
 				break;
 				
 				case 'NO INSERTADO': case 'NO ACTUALIZADO':
-					echo "<script>window.location='../login.php?mensaje=registro exitoso'</script>";
+                                {
+                                    session_start();
+                                    $_SESSION['form-email'] = $correo;
+                                    $_SESSION['password'] = $contrasenia;
+                                    header("Location: post.login.php");
+                                 
+                                }
 				break;
 			}
 			

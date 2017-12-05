@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-<html lang="esp">
+<html>
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Twicky Cursos</title>
         <!-- CSS -->
+        
         <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+        
         <link rel="stylesheet" href="../CSS/main-style.css">
-    <link rel="stylesheet" href="../CSS/cursos.css">
+        
+        <link rel="stylesheet" href="../CSS/cursos.css">
+     
         <script type="text/javascript" src="../JS/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="../JS/bootstrap.min.js"></script>
+        <style>
+            .list-inline-item a
+            {
+             text-decoration: none;
+             font-weight: bold;
+             
+             
+            }
+            body
+            {
+                background:whitesmoke;
+                color:#454545;
+            }
+            .video-presentacion
+            {
+                width:360;
+                height:205px;
+                position: fixed;bottom: 0;right: 0px; z-index:5;
+                -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow:    0px 0px 5px 0px rgba(0,0,0,0.75);
+                box-shadow:         0px 0px 5px 0px rgba(0,0,0,0.75);
+            }
+            
+        </style>
     </head>
     <body>
        <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -22,13 +50,13 @@
 					<li class="active list-inline-item"><a href="../index.php">Inicio</a></li>
 					<li class="list-inline-item"><a href="../HTML/lista-cursos.html">Cursos</a></li>
 					<li class="list-inline-item"><a href="../HTML/contacto.php">Contacto</a></li>
-					<li class="list-inline-item"> <button type="button" class="btn btn-primary" id="btn-register" onclick="location='login.php'"><strong>Entrar</strong></button></li>
+					
 				</ul>
 			</div>
         </nav>
         <!-- Top content -->
             <div class="container">
-                 <iframe style="position: fixed;bottom: 0;right: 0px;" frameborder="no" width="360" height="215" src="../Images/twicky.mp4"></iframe>
+                 <iframe class='video-presentacion' frameborder="no" src="../Images/twicky.mp4"></iframe>
     <div id="products" class="row grid-group">
         <div class="item  col-xs-4 col-lg-4">
             <div class="thumbnail">

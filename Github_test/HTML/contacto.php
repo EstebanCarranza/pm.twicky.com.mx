@@ -35,13 +35,27 @@
        <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="../index.php"><img  class="logo" src="../Images/Logo.png" /></a>
+                    <?php 
+                    if(isset($_SESSION['idUsuario'])) 
+                    {
+                        echo "<a class='navbar-brand' href='dashboard.php'><img  class='logo' src='../Images/Logo.png' /></a>";  
+                    }
+                    else
+                    {
+                        echo "<a class='navbar-brand' href='../index.php'><img  class='logo' src='../Images/Logo.png' /></a>";  
+                    }
+                    ?>
+                    
                 </div>
                 <ul class="list-inline">
                     <li class="active list-inline-item"><a href="../index.php">Inicio</a></li>
                     <li class="list-inline-item"><a href="../HTML/lista-cursos.html">Cursos</a></li>
                     <li class="list-inline-item"><a href="../HTML/contacto.php">Contacto</a></li>
-                    <li class="list-inline-item"> <button type="button" class="btn btn-primary" id="btn-register" onclick="location.href='../HTML/login.php'"><strong>Entrar</strong></button></li>
+                    <?php 
+                        if(!isset($_SESSION['idUsuario']))
+                            echo "<li class='list-inline-item'> <button type='button' class='btn btn-primary' id='btn-register' onclick='location.href='../HTML/login.php''><strong>Entrar</strong></button></li>";
+                    
+                    ?>
                 </ul>
             </div>
         </nav>
