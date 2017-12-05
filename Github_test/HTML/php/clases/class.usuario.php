@@ -175,19 +175,41 @@ class usuario
                                 $token = $res['token'];
                                 $destino = $res ['correoElectronico'];
                                 
-                                $Contenido = 
+                                /* $Contenido = 
                                 "Gracias por iniciar el proceso de registro en pm.twicky.com.mx, ya estás a un paso de ser parte del grupo :D\n 
                                 Has click en el siguiente enlace para continuar: \n
                                 http://pm.twicky.com.mx/?token=$token
                                 ";
+                                */
+
+                                $Contenido .= '
+                                <html>
+								<head>
+									<title></title>
+								</head>
+								<body>
+									<div>
+										<a href="http://pm.twicky.com.mx/"><img src="http://pm.twicky.com.mx/Images/Logo.png" /></a>
+									</div>
+								</body>
+								</html>
+								';
 
                                 //$headers  = 'MIME-Version: 1.0' . "\r\n";
 								//$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-                                $headers = 'From: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
+                                /* $headers = 'From: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
                                             'Reply-To: soporte.tecnico@pm.twicky.com.mx' . "\r\n" .
-                                            'X-Mailer: PHP/' . phpversion();
+                                            'X-Mailer: PHP/' . phpversion(); */
 
-                                $exito=mail($destino, "Correo de confirmación: pm.twicky.com.mx", $Contenido, $headers);
+                                $headers[] = 'MIME-Version: 1.0';
+                                $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
+                                $headers[] = 'From: soporte.tecnico@pm.twicky.com.mx';
+                                $headers[] = 'Reply-To: soporte.tecnico@pm.twicky.com.mx';
+                                $headers[] = 'X-Mailer: PHP/' . phpversion();
+
+
+                                $exito=mail($destino, "Correo de confirmación: pm.twicky.com.mx", $Contenido, implode("\r\n", $headers));
                                 if($exito)
                                     $respuesta = "OK";
                                 else 
