@@ -6,6 +6,13 @@ if(isset($_POST['form-email']) || isset($_POST['password']))
 {
     $correo = $_POST['form-email'];
     $contrasenia = $_POST['password'];
+ 
+    if($correo != null || $contrasenia != null)
+    {
+	$registro = new usuario();
+	$registro->login($correo, sha1($contrasenia));
+    }
+   
 }
 else
 {
@@ -14,14 +21,16 @@ else
     {
         $correo = $_SESSION['form-email'];
         $contrasenia = $_SESSION['password'];
+        
+        if($correo != null || $contrasenia != null)
+        {
+            $registro = new usuario();
+            $registro->login($correo, $contrasenia);
+        }
     }
     
 }
 
-if($correo != null || $contrasenia != null)
-{
-	$registro = new usuario();
-	$registro->login($correo, $contrasenia);
-}
+
 
 ?>

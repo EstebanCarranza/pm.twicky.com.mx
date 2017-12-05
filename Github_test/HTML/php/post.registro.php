@@ -15,7 +15,7 @@ if($correo != null || $contraseña != null || $celular != null || $nombre != nul
         session_start();
     }
     $_SESSION['registro'] = new usuario();
-    $_SESSION['registro']->registro($correo, $contrasenia, $celular, $nombre, $apellidoPaterno);	
+    $_SESSION['registro']->registro($correo, sha1($contrasenia), $celular, $nombre, $apellidoPaterno);	
         
 }
 
