@@ -203,8 +203,8 @@ class usuario
 										</tr>
 										<tr>
 											<td style="padding: 10px;">
-												<a href="http://pm.twicky.com.mx/?token=$token">
-													http://pm.twicky.com.mx/?token=$token
+												<a href="http://pm.twicky.com.mx/?token='.$token.'">
+													http://pm.twicky.com.mx/?token='.$token.'
 												</a>
 											</td>
 										</tr>
@@ -313,8 +313,8 @@ class usuario
 										</tr>
 										<tr>
 											<td style="padding: 10px;">
-												<a href="http://pm.twicky.com.mx/?token=$token">
-													http://pm.twicky.com.mx/?token=$token
+												<a href="http://pm.twicky.com.mx/?token='.$token.'">
+													http://pm.twicky.com.mx/?token='.$token.'
 												</a>
 											</td>
 										</tr>
