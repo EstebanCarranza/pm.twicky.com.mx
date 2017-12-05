@@ -388,14 +388,16 @@ class usuario
                                     echo "<script> window.location='?mensaje=token invalido';</script>";
 				break;
                                 case 'Token ya activo':
+                                    session_start();
+                                    $_SESSION['msg-body-correo'] = $res['correo'];
                                     echo "<script> window.location='HTML/login.php';</script>";
                                 break;
                             
 				case 'Token Correcto': 
                                     
-                                        session_start();
-                                    
-                                        $_SESSION['tokenOK'] = "OK";
+                                    session_start();
+                                    $_SESSION['msg-body-correo'] = $res['correo'];
+                                    $_SESSION['tokenOK'] = "OK";
                                     echo "<script>window.location='HTML/registro.php';</script>";
 				break;
 			}

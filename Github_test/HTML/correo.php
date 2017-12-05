@@ -34,8 +34,6 @@
                         <div class="form-top">
                             <div class="form-top-left">
                                 <?php $data->get_titles()?>
-                                
-                                
                             </div>
                         </div>
                         <div class="form-bottom">
