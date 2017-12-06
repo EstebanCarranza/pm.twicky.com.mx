@@ -34,8 +34,19 @@
             
             $pagIS1 = intVal($pagF, 10);
             $pagFS1 = intVal($pagIS1, 10) + 10;
-            $totalPrincipal = $dash->getTotalListaSolicitudes($orden, $pag, $pagF);
-            $totalSiguiente = $dash->getTotalListaSolicitudes($orden, $pagIS1, $pagFS1);
+            
+            switch($tipo)
+            {
+                case 'Cliente':
+                    $totalPrincipal = $dash->getTotalSolicitudesPorCliente($id, $orden, $pag, $pagF);
+                    $totalSiguiente = $dash->getTotalSolicitudesPorCliente($id, $orden, $pagIS1, $pagFS1);
+                break;
+                case 'Agente':
+                    $totalPrincipal = $dash->getTotalListaSolicitudes($orden, $pag, $pagF);
+                    $totalSiguiente = $dash->getTotalListaSolicitudes($orden, $pagIS1, $pagFS1);
+                break;
+            }
+            
             
             if($totalPrincipal == null) echo "<script> window.location = 'dashboard.php'; </script>";
             /*
@@ -114,7 +125,10 @@
                                     echo "<div class='btn-paginas'>";
                                     if(isset($_GET['pag']))
                                     {
-                                        echo "<button class='btn-anterior btn' onclick=pagAnt($pag)>Anterior</button>";   
+                                        if(!$_GET['pag'] == 0)
+                                        {
+                                            echo "<button class='btn-anterior btn' onclick=pagAnt($pag)>Anterior</button>";       
+                                        }
                                     }
                                     if($totalSiguiente != 0)
                                     {
