@@ -1,0 +1,58 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 12/06/2017 12:37
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 0px;
+}
+
+.flaticon-arrows:before { content: "\f100"; }
+.flaticon-medical-3:before { content: "\f101"; }
+.flaticon-scalpel:before { content: "\f102"; }
+.flaticon-lungs:before { content: "\f103"; }
+.flaticon-envelope:before { content: "\f104"; }
+.flaticon-location-marker:before { content: "\f105"; }
+.flaticon-frown-face:before { content: "\f106"; }
+.flaticon-users:before { content: "\f107"; }
+.flaticon-people:before { content: "\f108"; }
+.flaticon-medical-2:before { content: "\f109"; }
+.flaticon-thumb-up:before { content: "\f10a"; }
+.flaticon-brain:before { content: "\f10b"; }
+.flaticon-medical-1:before { content: "\f10c"; }
+.flaticon-stomach:before { content: "\f10d"; }
+.flaticon-medical:before { content: "\f10e"; }
+.flaticon-briefcase:before { content: "\f10f"; }
+.flaticon-doctor-stethoscope:before { content: "\f110"; }
+.flaticon-productivity:before { content: "\f111"; }
+.flaticon-eye:before { content: "\f112"; }
+.flaticon-tooth:before { content: "\f113"; }
+.flaticon-success:before { content: "\f114"; }
+.flaticon-time:before { content: "\f115"; }
+.flaticon-phone-call:before { content: "\f116"; }
+.flaticon-user:before { content: "\f117"; }
+.flaticon-search:before { content: "\f118"; }
+.flaticon-technology:before { content: "\f119"; }
+.flaticon-note:before { content: "\f11a"; }
