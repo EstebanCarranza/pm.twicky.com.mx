@@ -48,7 +48,8 @@
             }
             
             
-            if($totalPrincipal == null) echo "<script> window.location = 'dashboard.php'; </script>";
+            //if($totalPrincipal == null) echo "<script> window.location = 'dashboard.php'; </script>";
+            
             /*
             if($totalPrincipal != null) 
                 echo "
