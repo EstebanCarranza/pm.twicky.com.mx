@@ -77,7 +77,7 @@ class reportes
             //
             $datos = new BaseDatos();
             $datos->abrir_conexion();
-            $result = $datos->dbquery("call sp_ReporteClientesAtendidosCountRows($idAgente, '$orden', '$campo', $limite1, $limite2);");
+            $result = $datos->dbquery("call sp_ReporteClientesSinAtenderCountRows($idAgente, '$orden', '$campo', $limite1, $limite2);");
             $total = 0;
             while($res = mysql_fetch_array($result, MYSQL_ASSOC))	
             {

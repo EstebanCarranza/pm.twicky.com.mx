@@ -3,7 +3,20 @@
     <meta charset="UTF-8">
     <title>Reporte Clientes Atendidos </title>
     <link rel="stylesheet" type="text/css" href="../CSS/reporte-cliente.css"/>
-	
+    <script> 
+            function pagAnt(pagina)
+            {
+                
+                pagina = parseInt(pagina) - 10;
+                window.location = 'reporte-clientes-sin-atender.php?pag=' + pagina;
+            }
+            function pagSig(pagina)
+            {
+                
+                pagina = parseInt(pagina) + 10;
+                window.location = 'reporte-clientes-sin-atender.php?pag=' + pagina;
+            }
+    </script>
 </head>
 <body>
 	<?php
@@ -26,7 +39,23 @@
     
   </tbody>
 </table>
-    <div class="btn-paginas"><button class="btn-anterior btn">Anterior</button><button class="btn-siguiente btn">Siguiente</button></div>
+     <?php 
+         echo "<div class='btn-paginas'>";
+            if(isset($_GET['pag']))
+            {
+                if(!$_GET['pag'] == 0)
+                {
+                    echo "<button class='btn-anterior btn' onclick=pagAnt($pag)>Anterior</button>";       
+                }
+
+            }
+          if($totalSiguiente != 0)
+            {
+                echo "<button class='btn-siguiente btn' onclick=pagSig($pag)>Siguiente</button>";    
+            }
+
+        echo "</div>";
+    ?>
 </body>
 
 </DOCTYPE>

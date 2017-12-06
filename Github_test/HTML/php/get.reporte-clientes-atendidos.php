@@ -28,7 +28,7 @@ require_once 'clases/class.reportes.php';
     if($totalPrincipal == null) echo "<script> window.location = 'reporte-clientes-atendidos.php'; </script>";
 
 
-$reporte->clientes_atendidos($_SESSION['idUsuario'], 'ASC', 'nombre', 0, 10);
+$reporte->clientes_atendidos($_SESSION['idUsuario'], 'ASC', 'nombre', $pag, $pagF);
 
 
     

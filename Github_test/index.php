@@ -76,7 +76,7 @@ $(document).ready(function(){
 });
 </script>
     <section class="bottom">
-        <div class="description left-description">
+        <div class="description left-description"  onclick="location='HTML/lista-cursos.html'">
             <h1>Los mejores cursos</h1>
             <h2>Tú eliges el curso que te gustaría aprender.</h2>
             <span><img class="image-courses" src="Images/Ae.png"></span>
