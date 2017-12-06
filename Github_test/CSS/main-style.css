@@ -3,8 +3,8 @@ body{
     padding: 0;
 }
 .sombreado{
-     -moz- text-shadow: 3px 3px 3px #000;
-    -webkit- text-shadow: 3px 3px 3px #000;
+     -moz-text-shadow: 3px 3px 3px #000;
+    -webkit-text-shadow: 3px 3px 3px #000;
      text-shadow: 3px 3px 3px #000;
 }
 #time-final{
@@ -18,7 +18,7 @@ body{
     margin-top: 73px;
 }
 #time-initial{
-    position: absolute; !important
+    position: absolute;
 }
 
 .ad-banner-leader{
@@ -175,3 +175,37 @@ h3{
   border-color: #428bca; }
 .checkbox-primary input[type="checkbox"]:checked + label::after {
   color: #fff; }
+
+.ecDescription
+{
+    cursor:pointer;
+    overflow:auto;
+    
+    margin-left:1%;
+    margin-right:-1%;
+    padding:1%;
+    box-sizzing:border-box;
+    transform: scale(0.9);
+}
+.ecDescription:hover
+{
+    background-color:whitesmoke;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow:         0px 0px 5px 0px rgba(0,0,0,0.75);
+    transform: scale(1);
+}
+.ecButtons
+{
+    cursor:pointer;
+    overflow:auto;
+    clear:both;
+    box-sizzing:border-box;
+    z-index:1;
+
+}
+.ecButtons:hover
+{
+    
+}

@@ -1,4 +1,5 @@
-﻿<DOCTYPE html>
+﻿<!DOCTYPE html>
+<html>
 <head>
     <?php require_once 'HTML/php/get.token.php'; ?>
     <meta charset="UTF-8">
@@ -76,10 +77,10 @@ $(document).ready(function(){
 });
 </script>
     <section class="bottom">
-        <div class="description left-description"  onclick="location='HTML/lista-cursos.html'">
+        <div class="description left-description ecDescription"  onclick="location='HTML/lista-cursos.html'">
             <h1>Los mejores cursos</h1>
             <h2>Tú eliges el curso que te gustaría aprender.</h2>
-            <span><img class="image-courses" src="Images/Ae.png"></span>
+            <span class='ecButtons'><img class="image-courses" src="Images/Ae.png"></span>
             <span><img class="image-courses" src="Images/PI.png"></span>
             <span><img class="image-courses" src="Images/Au.png"></span>
             <span><img class="image-courses" src="Images/Br.png"></span>
@@ -94,4 +95,4 @@ $(document).ready(function(){
         </div>
     </section>
 </body>
-</DOCTYPE>
+</html>
