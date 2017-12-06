@@ -58,7 +58,7 @@
             */
       
  
-        
+        $dash->getTutorial();
 	switch($tipo)
 	{
             case 'Cliente':

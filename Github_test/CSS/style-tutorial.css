@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6/12/2017, 01:25:54 PM
+    Author     : esteban.carranza
+*/
+
+.tuto-content
+{
+    margin:auto;
+    top:0px;
+    z-index:10;
+    position:fixed;
+    width:100%;
+    height:100%;
+    margin:auto;
+    text-align: center;
+    background:rgba(1,1,1,0.2);
+}
+.tuto-form
+{
+    border-radius:5px;
+    background:whitesmoke;
+    width:50%;
+    margin:10% auto;
+    padding:3%;
+    box-sizing:border-box;
+    
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow:         0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+button.tuto-btn-NO
+{
+    width:70%;
+   
+}
+button.tuto-btn-RES
+{
+    
+    width:20%;
+    
+    box-sizing:border-box;
+}

@@ -32,6 +32,7 @@ class usuario
                                 $_SESSION['apellidoPaterno'] = $res['apellidoPaterno'];
                                 $_SESSION['celular'] = $res['celular'];
                                 $_SESSION['correoElectronico'] = $res['correoElectronico'];
+                                $_SESSION['verHistorial'] = $res['verHistorial'];
                                 header('Location: ../dashboard.php');
 				//echo "<script>window.location = '../header.php';</script>";
 			}

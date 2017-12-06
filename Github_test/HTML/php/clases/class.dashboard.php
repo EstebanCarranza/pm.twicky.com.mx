@@ -10,6 +10,50 @@ class dashboard
 	{
 				
 	}
+        
+        public function getTutorial()
+        {
+            if($_SESSION['verHistorial'] == "1" && $_SESSION['tipoUsuario'] == "Cliente")
+            {
+                echo "
+                        <div id='tuto-div-content' class='tuto-content'>
+                            <div class='tuto-form'>
+                                <h1 id='login-title'><strong>¿Quieres ver el tutorial?</strong></h1>
+                                <hr>
+                                <button id='tuto-btn-si' class='btn btn-calificado tuto-btn-RES' type='button'>Si</button>
+                                <button id='tuto-btn-no' class='btn btn-calificando tuto-btn-RES' type='button'>No</button>
+                                <hr>
+                                <form action='php/post.ocultarTutorial.php' method='post'>
+                                    <button class='btn btn-sinCalificar tuto-btn-NO' type='submit'>No volver a mostrar este mensaje</button>
+                                
+                                </form>
+                            </div>
+                        </div>
+                     ";
+            }
+        }
+        public function ocultarTutorial($idUsuario, $tipoUsuario)
+        {
+            
+            
+            $datos = new BaseDatos();
+		$datos->abrir_conexion();
+		$result = $datos->dbquery("call sp_DesactivarTutorial($idUsuario,'$tipoUsuario');");
+		
+		while($res = mysql_fetch_array($result, MYSQL_ASSOC))	
+		{
+                    if ($res['result'] == 'OK')
+                    {
+                        $_SESSION['verHistorial'] = 0;
+                        echo "<script> window.location = '../dashboard.php'; </script>";
+                    }
+                    else
+                        echo "<script> window.location = '../dashboard.php'; </script>";
+		}
+		
+		$datos->cerrar_conexion(true, $result);
+        }
+        
 	public function getListaSolicitudesPorCliente($idCliente, $orden, $limite1, $limite2)
 	{
 		$datos = new BaseDatos();
