@@ -17,7 +17,7 @@
     <body>
         <?php
             include('header.php');
-            require_once 'php/get.solicitud.php'; 
+            require_once 'php/get.solicitudRespuestaCliente.php'; 
         ?>
     </body>
 </html>

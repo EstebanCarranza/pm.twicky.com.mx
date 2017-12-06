@@ -8,13 +8,13 @@
             {
                 
                 pagina = parseInt(pagina) - 10;
-                window.location = 'reporte-clientes-atendidos.php?pag=' + pagina;
+                window.location = 'ver-historial.php?pag=' + pagina;
             }
             function pagSig(pagina)
             {
                 
                 pagina = parseInt(pagina) + 10;
-                window.location = 'reporte-clientes-atendidos.php?pag=' + pagina;
+                window.location = 'ver-historial.php?pag=' + pagina;
             }
     </script>
 </head>
@@ -25,19 +25,22 @@
   <table class="table table-hover">
   <thead class="thead-inverse">
     <tr>
-      <th>Nombre</th>
-      <th>Fecha de Atendido</th>
-      <th>Duda</th>
+      
+     
+      <th>Cliente</th>
+      <th>Agente</th>
       <th>Comentario</th>
-      <th>Producto</th>
+       <th>Fecha de captura</th>
+      <th>Fecha de registro</th>
     </tr>
   </thead>
   <tbody>
-      <?php require_once 'php/get.reporte-clientes-atendidos.php'; ?>
+      <?php require_once 'php/get.ver-historial.php'; ?>
     
   </tbody>
 </table>
     <?php 
+    /*
          echo "<div class='btn-paginas'>";
             if(isset($_GET['pag']))
             {
@@ -52,7 +55,7 @@
                 echo "<button class='btn-siguiente btn' onclick=pagSig($pag)>Siguiente</button>";    
             }
 
-        echo "</div>";
+        echo "</div>";*/
     ?>
     
 </body>

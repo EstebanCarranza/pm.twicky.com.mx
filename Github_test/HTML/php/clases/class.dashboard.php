@@ -25,6 +25,45 @@ class dashboard
 					<td> $res[producto] </td>
 					<td> $res[comentarios] </td>
 					<td> $res[estado] </td>
+                                        <td> 
+                                           ";
+                                        switch($res['estado'])
+                                        {
+                                            case 'sin calificar':
+                                                   echo "
+                                                       <form method='get' action='responder-solicitud.php'>
+                                                        <input name='folio' type='hidden' value='$res[idSeguimiento]'>
+                                                        <button type='submit' class='btn btn-primary center-obj btn-sincalificar'> 
+                                                            Enviar mensaje
+                                                        </button> 
+                                                        </form>
+                                                    ";
+                                            break;
+                                            
+                                            case 'calificando':
+                                                 echo "
+                                                     <form method='get' action='responder-solicitud.php'>
+                                                        <input name='folio' type='hidden' value='$res[idSeguimiento]'>
+                                                        <button type='submit' class='btn btn-primary center-obj btn-calificando'> 
+                                                            Responder
+                                                        </button> 
+                                                        </form>
+                                                        ";  
+                                            break;
+                                            case 'calificado':
+                                                 echo "
+                                                        <input name='folio' type='hidden' value='$res[idSeguimiento]'>
+                                                        <button type='submit' disabled class='btn btn-primary center-obj btn-calificado'> 
+                                                            $res[estado]
+                                                        </button> 
+                                                        ";  
+                                            break;
+                                        }
+
+                                     
+                        
+                        echo " 
+                                        </td>
 				</tr>";
 
 			

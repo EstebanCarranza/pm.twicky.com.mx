@@ -46,9 +46,15 @@ class header
     public function botonesCliente()
     {
         echo "<li class='list-inline-item'> 
+           
             <button type='button' class='btn btn-primary reporte-cliente' onclick=ir_a('contacto') >
                 <strong> Crear nueva solicitud </strong>
             </button>
+            
+            <button type='button' class='btn btn-primary reporte-cliente' onclick=ir_a('misSolicitudes') >
+                <strong> Ver mis cerradas </strong>
+            </button>
+            </form>
         </li>";
     }
 

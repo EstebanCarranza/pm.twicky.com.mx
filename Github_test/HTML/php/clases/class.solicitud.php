@@ -113,4 +113,63 @@ class solicitud
         $datos->cerrar_conexion(true, $result);
     }
             
+    
+      public function responderSolicitudCliente($idSolicitud, $respuesta)
+    {
+        $datos = new BaseDatos();
+        $datos->abrir_conexion();
+        session_start();
+        $folio = $idSolicitud;
+        $idUsuario = $_SESSION['idUsuario'];
+        $result = $datos->dbquery("call sp_responderSolicitudCliente($idSolicitud, $idUsuario, '$respuesta');");
+/*
+        while($res = mysql_fetch_array($result, MYSQL_ASSOC))	
+        {*/
+             //$resultado = $res['result'];
+            
+                echo "<script> window.location ='../dashboard.php'; </script>";
+                /*
+                case 'Solicitud actualizada': 
+                    echo "<script> window.location ='../dashboard.php'; </script>";
+                break;
+                case 'Error de solicitud': 
+                    echo "<script> window.location ='../dashboard.php'; </script>";
+                break;
+                case 'Agente no activo o no registrado': 
+                    echo "<script> window.location ='../dashboard.php'; </script>";
+                break;*/
+            
+        /*}*/
+
+        $datos->cerrar_conexion(true, $result);
+    }
+    public function cerrarSolicitudCliente($idSolicitud, $respuesta)
+    {
+        $datos = new BaseDatos();
+        $datos->abrir_conexion();
+        session_start();
+        $folio = $idSolicitud;
+        $idUsuario = $_SESSION['idUsuario'];
+        $result = $datos->dbquery("call sp_CerrarSolicitud($idSolicitud, $idUsuario, '$respuesta');");
+
+        while($res = mysql_fetch_array($result, MYSQL_ASSOC))	
+        {
+             $resultado = $res['result'];
+            switch($resultado)
+            {
+                case 'Solicitud actualizada': 
+                    echo "<script> window.location ='../dashboard.php'; </script>";
+                break;
+                case 'Error de solicitud': 
+                    echo "<script> window.location ='../dashboard.php'; </script>";
+                break;
+                case 'Agente no activo o no registrado': 
+                    echo "<script> window.location ='../dashboard.php'; </script>";
+                break;
+            }
+        }
+
+        $datos->cerrar_conexion(true, $result);
+    }
+            
 };

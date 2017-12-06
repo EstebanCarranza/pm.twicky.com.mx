@@ -16,14 +16,14 @@ if(isset($_POST['folio']) && isset($_POST['funcion']))
                 $respuesta = $_POST['respuesta'];
                 if($respuesta != "" && $respuesta != null)
                 {
-                    $solicitud->responderSolicitud($idSolicitud, $respuesta);    
+                    $solicitud->responderSolicitudCliente($idSolicitud, $respuesta);    
                 }
                 
             }
             
         break;
         case 'atender-folio':
-            $solicitud->atenderSolicitud($idSolicitud);
+            $solicitud->atenderSolicitudCliente($idSolicitud);
         break;
         case 'cerrar-folio':
              if(isset($_POST['respuesta']))
@@ -31,7 +31,7 @@ if(isset($_POST['folio']) && isset($_POST['funcion']))
                 $respuesta = $_POST['respuesta'];
                 if($respuesta != "" && $respuesta != null)
                 {
-                    $solicitud->cerrarSolicitud($idSolicitud, $respuesta);
+                    $solicitud->cerrarSolicitudCliente($idSolicitud, $respuesta);
                 }
             }
         break;

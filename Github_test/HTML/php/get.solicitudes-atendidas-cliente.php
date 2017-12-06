@@ -22,11 +22,11 @@ require_once 'clases/class.reportes.php';
     $pagIS1 = intVal($pagF, 10);
     $pagFS1 = intVal($pagIS1, 10) + 10;
  
-    $totalPrincipal = $reporte->getTotalClientesSinAtender($id, $orden, $campo, $pag, $pagF);
-    $totalSiguiente = $reporte->getTotalClientesSinAtender($id, $orden, $campo, $pagIS1, $pagFS1);
+    $totalPrincipal = $reporte->getTotalSolicitudesAtendidasPorCliente($id, $orden, $campo, $pag, $pagF);
+    $totalSiguiente = $reporte->getTotalSolicitudesAtendidasPorCliente($id, $orden, $campo, $pagIS1, $pagFS1);
 
-    if($totalPrincipal == null) echo "<script> window.location = 'reporte-clientes-sin-atender.php'; </script>";
+    if($totalPrincipal == null) echo "<script> window.location = 'solicitudes-atendidas-cliente.php'; </script>";
     
     
     
-$reporte->clientes_sin_atender($_SESSION['idUsuario'], 'ASC', 'nombre', $pag, $pagF);
+$reporte->solicitudesAtendidasPorCliente($_SESSION['idUsuario'], 'ASC', 'nombre', $pag, $pagF);

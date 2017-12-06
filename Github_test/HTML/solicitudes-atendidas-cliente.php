@@ -8,13 +8,13 @@
             {
                 
                 pagina = parseInt(pagina) - 10;
-                window.location = 'reporte-clientes-atendidos.php?pag=' + pagina;
+                window.location = 'solicitudes-atendidas-cliente.php?pag=' + pagina;
             }
             function pagSig(pagina)
             {
                 
                 pagina = parseInt(pagina) + 10;
-                window.location = 'reporte-clientes-atendidos.php?pag=' + pagina;
+                window.location = 'solicitudes-atendidas-cliente.php?pag=' + pagina;
             }
     </script>
 </head>
@@ -25,15 +25,15 @@
   <table class="table table-hover">
   <thead class="thead-inverse">
     <tr>
-      <th>Nombre</th>
+      <th>Folio</th>
       <th>Fecha de Atendido</th>
-      <th>Duda</th>
-      <th>Comentario</th>
       <th>Producto</th>
+      <th>Comentario</th>
+      <th>Ver historial</th>
     </tr>
   </thead>
   <tbody>
-      <?php require_once 'php/get.reporte-clientes-atendidos.php'; ?>
+      <?php require_once 'php/get.solicitudes-atendidas-cliente.php'; ?>
     
   </tbody>
 </table>

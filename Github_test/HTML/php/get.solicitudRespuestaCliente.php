@@ -15,7 +15,7 @@ else
 
 echo "
     <div class='btn-paginas btn-paginas-cerrar slc-div-content'>
-        <form action='php/post.solicitud.php' method='post'>
+        <form action='php/post.responder-solicitud-cliente' method='post'>
             <input name='folio' type='hidden' value='$folio'>
             <input name='funcion' type='hidden' value='cerrar-folio'>
             <input name='respuesta' required id='razon-input' type='text' class='form-control input-sm response_input slc-objects slc-input-folio' placeholder='Razón de cierre de folio...' />
@@ -32,7 +32,7 @@ echo "
             $solicitud->obtenerSolicitud($folio);
 echo "
         </div>
-        <form action='php/post.solicitud.php' method='post'>
+        <form action='php/post.responder-solicitud-cliente.php' method='post'>
             <div class='input-group'>
                 <input name='folio' type='hidden' value='$folio'>
                 <input name='funcion' type='hidden' value='responder-folio'>
@@ -43,10 +43,12 @@ echo "
             </div>
         </form>
     </div>
+    
     <div class='btn-paginas btn-paginas-solicitud'>
-        <form action='php/post.solicitud.php' method='post'>
+        <form action='ver-historial.php' method='get'>
         <input name='folio' type='hidden' value='$folio'>
-            <input name='funcion' type='hidden' value='atender-folio'>
-            <button class='btn' id='btn-atender'>Atender folio</button>   
+            <input name='funcion' type='hidden' value='ver-historial'>
+            <button class='btn' id='btn-atender'>Ver historial</button>   
         </form>
-    </div>";
+    </div>
+    ";

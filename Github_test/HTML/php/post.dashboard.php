@@ -73,7 +73,9 @@
                                     <th scope='col' id='td-col-producto' class='w-25'> 	Producto 				</th>
                                     <th scope='col' id='td-col-comentario' class='w-25'> Comentario	 			</th>
                                     <th scope='col' id='td-col-estado' class='w-25'> 	Estado 					</th>
+                                    <th scope='col'>Responder</th>
                                 </tr>
+                                
                             </thead>
                             <tbody class='table-body'>";
                                 $dash->getListaSolicitudesPorCliente($id, $orden, $pag, $pagF);

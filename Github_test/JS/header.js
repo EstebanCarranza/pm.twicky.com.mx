@@ -14,7 +14,7 @@ function ir_a(pagina)
         case 'reporte-clientes-atendidos': window.location = 'reporte-clientes-atendidos.php';    break;
         case 'contacto': window.location = 'contacto.php';    break;
         case 'reporte-clientes-sin-atender': window.location = 'reporte-clientes-sin-atender.php';    break;
-        
+        case 'misSolicitudes':  window.location = 'solicitudes-atendidas-cliente.php'; break;
         default: window.location = '../index.php';      break;
     }
 }
