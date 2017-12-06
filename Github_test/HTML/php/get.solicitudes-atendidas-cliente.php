@@ -29,4 +29,4 @@ require_once 'clases/class.reportes.php';
     
     
     
-$reporte->solicitudesAtendidasPorCliente($_SESSION['idUsuario'], 'ASC', 'nombre', $pag, $pagF);
+$reporte->solicitudesAtendidasPorCliente($_SESSION['idUsuario'], $orden, 'nombre', $pag, $pagF);

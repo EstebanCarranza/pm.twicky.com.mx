@@ -29,4 +29,4 @@ require_once 'clases/class.reportes.php';
     
     
     
-$reporte->clientes_sin_atender($_SESSION['idUsuario'], 'ASC', 'nombre', $pag, $pagF);
+$reporte->clientes_sin_atender($_SESSION['idUsuario'], $orden, 'nombre', $pag, $pagF);

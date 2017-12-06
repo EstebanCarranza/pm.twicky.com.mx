@@ -28,7 +28,7 @@ require_once 'clases/class.reportes.php';
     
 
 
-$reporte->clientes_atendidos($_SESSION['idUsuario'], 'ASC', 'nombre', $pag, $pagF);
+$reporte->clientes_atendidos($_SESSION['idUsuario'], $orden, 'nombre', $pag, $pagF);
 
 
     
