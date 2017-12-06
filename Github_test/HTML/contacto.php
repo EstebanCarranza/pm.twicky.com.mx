@@ -53,7 +53,7 @@
                     <li class="list-inline-item"><a href="../HTML/contacto.php">Contacto</a></li>
                     <?php 
                         if(!isset($_SESSION['idUsuario']))
-                            echo "<li class='list-inline-item'> <button type='button' class='btn btn-primary' id='btn-register' onclick='location.href='../HTML/login.php''><strong>Entrar</strong></button></li>";
+                            echo "<li class='list-inline-item'> <button type='button' class='btn btn-primary' id='btn-register' onclick=location='../HTML/correo.php'><strong>Registrarte</strong></button></li>";
                     
                     ?>
                 </ul>
