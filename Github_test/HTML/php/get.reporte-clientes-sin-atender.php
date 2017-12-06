@@ -25,7 +25,7 @@ require_once 'clases/class.reportes.php';
     $totalPrincipal = $reporte->getTotalClientesSinAtender($id, $orden, $campo, $pag, $pagF);
     $totalSiguiente = $reporte->getTotalClientesSinAtender($id, $orden, $campo, $pagIS1, $pagFS1);
 
-    if($totalPrincipal == null) echo "<script> window.location = 'reporte-clientes-sin-atender.php'; </script>";
+    
     
     
     

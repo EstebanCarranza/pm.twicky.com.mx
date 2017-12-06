@@ -25,7 +25,7 @@ require_once 'clases/class.reportes.php';
     $totalPrincipal = $reporte->getTotalClientesAtendidos($id, $orden, $campo, $pag, $pagF);
     $totalSiguiente = $reporte->getTotalClientesAtendidos($id, $orden, $campo, $pagIS1, $pagFS1);
 
-    if($totalPrincipal == null) echo "<script> window.location = 'reporte-clientes-atendidos.php'; </script>";
+    
 
 
 $reporte->clientes_atendidos($_SESSION['idUsuario'], 'ASC', 'nombre', $pag, $pagF);

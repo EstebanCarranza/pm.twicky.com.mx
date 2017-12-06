@@ -25,7 +25,7 @@ require_once 'clases/class.reportes.php';
     $totalPrincipal = $reporte->getTotalSolicitudesAtendidasPorCliente($id, $orden, $campo, $pag, $pagF);
     $totalSiguiente = $reporte->getTotalSolicitudesAtendidasPorCliente($id, $orden, $campo, $pagIS1, $pagFS1);
 
-    if($totalPrincipal == null) echo "<script> window.location = 'solicitudes-atendidas-cliente.php'; </script>";
+    
     
     
     
