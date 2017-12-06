@@ -24,7 +24,24 @@ class reportes
 
             $datos->cerrar_conexion(true, $result);
     }
+        public function getTotalClientesAtendidos($idAgente, $orden, $campo, $limite1, $limite2)
+        {
+            //
+            $datos = new BaseDatos();
+            $datos->abrir_conexion();
+            $result = $datos->dbquery("call sp_ReporteClientesAtendidosCountRows($idAgente, '$orden', '$campo', $limite1, $limite2);");
+            $total = 0;
+            while($res = mysql_fetch_array($result, MYSQL_ASSOC))	
+            {
+                $total = intval($total, 10) + 1;
+            }
+
+            $datos->cerrar_conexion(true, $result);
+
+            return $total;
+        }
     
+        
     public function clientes_sin_atender($idAgente, $orden, $campo, $limite1, $limite2)
     {
          
@@ -54,5 +71,23 @@ class reportes
 
             $datos->cerrar_conexion(true, $result);
     }
+    
+    public function getTotalClientesSinAtender($idAgente, $orden, $campo, $limite1, $limite2)
+        {
+            //
+            $datos = new BaseDatos();
+            $datos->abrir_conexion();
+            $result = $datos->dbquery("call sp_ReporteClientesAtendidosCountRows($idAgente, '$orden', '$campo', $limite1, $limite2);");
+            $total = 0;
+            while($res = mysql_fetch_array($result, MYSQL_ASSOC))	
+            {
+                $total = intval($total, 10) + 1;
+            }
+
+            $datos->cerrar_conexion(true, $result);
+
+            return $total;
+        }
+    
 }
 
