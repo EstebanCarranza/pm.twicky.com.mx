@@ -15,9 +15,9 @@ class solicitud
             {
                     echo "<div class='col-md-10 col-xs-10 response-client'>
                             <input type='hidden' value='$res[idSeguimiento]'>
+                            <input type='hidden' value='$res[estado]' id='src-ipt-estado'>
                             <div><h1>$res[nombreCliente] • $res[correoElectronico]</h1><h4 style='float: right;margin-top: -29px; margin-right: 10px;'>Estado:<strong  class='important'> $res[estado]</strong></h4></div>
                             <h4>Telefono: $res[celular]</h4>
-                            <h4>Tipo de contacto:<strong> $res[tipoContacto]</strong></h4>
                             <h2>$res[descripcion]</h2>
                            <h3>$res[comentarios]</h3>
                            <time datetime='2009-11-13T20:00' class='time'>Fecha de contacto: $res[fechaCaptura]</time>

@@ -13,6 +13,23 @@
     <link rel="stylesheet" type="text/css" href="../CSS/main-style.css"/>
      <link rel="stylesheet" type="text/css" href="../CSS/response.css"/>
 	<script src="../JS/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <script> 
+            $(document).ready(function()
+            {
+                $("#src-btn-regresar").hide();
+                
+                if($("#src-ipt-estado").val() == "sin calificar")
+                {
+                    $("#src-btn-verHistorial").hide();
+                    $("#src-frm-ResponderSolicitud").hide();
+                    $("#src-btn-regresar").show();
+                }
+                
+               
+            });
+                
+            
+        </script>
     </head>
     <body>
         <?php
