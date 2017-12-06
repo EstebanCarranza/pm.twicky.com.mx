@@ -3,12 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/pm/Github_test/HTML/php/get.solicitudes-atendidas-cliente.php</file>
-            <file>file:/C:/xampp/htdocs/pm/Github_test/HTML/php/get.reporte-clientes-sin-atender.php</file>
-            <file>file:/C:/xampp/htdocs/pm/Github_test/HTML/php/get.reporte-clientes-atendidos.php</file>
-            <file>file:/C:/xampp/htdocs/pm/Github_test/HTML/php/get.solicitudRespuestaCliente.php</file>
-            <file>file:/C:/xampp/htdocs/pm/Github_test/HTML/php/get.ver-historial.php</file>
-            <file>file:/C:/xampp/htdocs/pm/Github_test/HTML/php/get.solicitud.php</file>
+            <file>file:/C:/xampp/htdocs/pm/Github_test/HTML/php/clases/class.header.php</file>
         </group>
     </open-files>
 </project-private>

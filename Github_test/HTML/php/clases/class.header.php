@@ -52,7 +52,7 @@ class header
             </button>
             
             <button type='button' class='btn btn-primary reporte-cliente' onclick=ir_a('misSolicitudes') >
-                <strong> Ver mis cerradas </strong>
+                <strong> Calificadas </strong>
             </button>
             </form>
         </li>";
