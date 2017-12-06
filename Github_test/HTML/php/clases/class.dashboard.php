@@ -97,6 +97,21 @@ class dashboard
 		$datos->cerrar_conexion(true, $result);
 	}
 
+        public function getTotalListaSolicitudes($orden, $limite1, $limite2)
+	{
+		$datos = new BaseDatos();
+		$datos->abrir_conexion();
+		$result = $datos->dbquery("call sp_ListaSolicitudesCountRows('$orden',$limite1, $limite2);");
+		$total = 0;
+		while($res = mysql_fetch_array($result, MYSQL_ASSOC))	
+		{
+                    $total = intval($total, 10) + 1;
+		}
+		
+		$datos->cerrar_conexion(true, $result);
+                
+                return $total;
+	}
 };
 
 ?>
