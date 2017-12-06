@@ -15,6 +15,8 @@ class usuario
 	{
 		$datos = new BaseDatos();
 		$datos->abrir_conexion();
+                $correo = addslashes($correo);
+                $contrasenia = addslashes($contrasenia);
 		$result = $datos->dbquery("call sp_login('$correo','$contrasenia');");
 		
 		while($res = mysql_fetch_array($result, MYSQL_ASSOC))	

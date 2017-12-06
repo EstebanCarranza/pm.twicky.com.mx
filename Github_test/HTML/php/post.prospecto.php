@@ -27,6 +27,7 @@ $dayData =  substr($var,0,$cant-1);
  $horaInicio24  = date("H:i", strtotime($horaInicio));
  $horaFin24  = date("H:i", strtotime($horaFin));
  
+ 
  if($dayData != "")
  {
     if
@@ -37,7 +38,7 @@ $dayData =  substr($var,0,$cant-1);
     {
 
             $prospecto = new usuario();
-            $prospecto->prospecto($correo,$dayData,$celular,$nombre,$apellidoPaterno,$comentarios, $horaInicio24, $horaFin24, $idProducto);
+            $prospecto->prospecto(addslashes($correo),  addslashes($dayData),addslashes($celular),addslashes($nombre),addslashes($apellidoPaterno),addslashes($comentarios), addslashes($horaInicio24), addslashes($horaFin24), $idProducto);
     }
 
  }
